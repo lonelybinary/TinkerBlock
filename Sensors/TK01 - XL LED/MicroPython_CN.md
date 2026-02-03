@@ -6,6 +6,8 @@
 
 ## 连线
 
+![接线图](images/wiring_diagram_pico2-1.png)
+
 - **GND** → 树莓派 Pico 2 的 GND
 - **SIGNAL** → 树莓派 Pico 2 的 GPIO 0（若程序中修改了 `LED_PIN`，则接对应引脚）
 - **NC** → 悬空不接
@@ -35,15 +37,16 @@ while True:
     time.sleep(1)            # 等待1秒
 ```
 
-# 程序讲解
+## 效果
 
-**第 1–14 行：文档字符串**
+![效果图](images/TK01-pico.gif)
 
-- 说明程序功能、引脚连接与使用方法，不影响运行。
 
-**第 16–17 行：导入库**
+## 程序讲解
 
+**第 1–3 行：导入库**
 ```python
+# 导入需要的库
 from machine import Pin  # 控制GPIO引脚
 import time              # 时间相关功能（用于延时）
 ```
@@ -51,30 +54,36 @@ import time              # 时间相关功能（用于延时）
 - **`machine.Pin`：** 用于控制 Pico 的 GPIO 引脚
 - **`time`：** 提供 `sleep()` 等时间相关功能
 
-**第 19–23 行：引脚定义与对象创建**
-
+**第 6 行：引脚定义**
 ```python
 LED_PIN = 0  # SIGNAL引脚连接的GPIO号（如GPIO 0）
-led = Pin(LED_PIN, Pin.OUT)  # 设置LED引脚为输出模式
 ```
 
-- **`LED_PIN = 0`：** SIGNAL 连接的 GPIO 编号，接其他引脚时修改此处
+- **`LED_PIN`：** 定义 LED 引脚连接到 Pico 的 GPIO 0（如果接在其他引脚，修改这个数字）
+
+**第 9 行：创建引脚对象**
+```python
+led = Pin(LED_PIN, Pin.OUT)  # 设置LED引脚为输出模式（用来控制LED亮灭）
+```
+
 - **`Pin(LED_PIN, Pin.OUT)`：** 将引脚设为输出模式，用于控制 LED 亮灭
 
-**第 25–34 行：主循环**
-
+**第 12–20 行：主循环**
 ```python
+# 主循环：程序会一直运行
 while True:
-    led.on()
-    print("LED点亮")
-    time.sleep(1)
+    # LED闪烁效果
+    led.on()                 # 输出高电平，点亮LED
+    print("LED点亮")         # 在终端显示信息
+    time.sleep(1)            # 等待1秒
 
-    led.off()
-    print("LED熄灭")
-    time.sleep(1)
+    led.off()                # 输出低电平，熄灭LED
+    print("LED熄灭")         # 在终端显示信息
+    time.sleep(1)            # 等待1秒
 ```
 
 - **`while True`：** 无限循环，程序持续运行
 - **`led.on()`：** 输出高电平，点亮 LED
 - **`led.off()`：** 输出低电平，熄灭 LED
-- **`time.sleep(1)`：** 延时 1 秒
+- **`print(...)`：** 在终端打印 LED 状态信息
+- **`time.sleep(1)`：** 等待 1 秒，控制 LED 闪烁频率
