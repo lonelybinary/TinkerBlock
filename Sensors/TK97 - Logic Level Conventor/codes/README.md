@@ -8,7 +8,7 @@ TK97 is a logic level converter module, mainly used for bidirectional conversion
 
 ## Usage Scenario
 
-TK97 module is mainly used together with **TK89 - 1.8INCH TFT ST7735** screen module.
+TK97 module is mainly used together with **TK89 - 1.8'' TFT** screen module.
 
 ### Why TK97 is Needed?
 
@@ -33,8 +33,7 @@ TK97 logic level converter module can:
 ## Example Code Location
 
 TK89 screen module's example code is located at:
-- **Arduino Example**: `../TK89 - 1.8INCH TFT ST7735/Arduino.md`
-- **MicroPython Example**: `../TK89 - 1.8INCH TFT ST7735/MicroPython.md`
+- **Arduino Example**: [Arduino.md](../../TK89%20-%201.8%27%27%20TFT/Arduino.md)
 
 ## Summary
 
