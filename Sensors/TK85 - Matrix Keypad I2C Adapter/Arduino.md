@@ -14,265 +14,174 @@ This example shows how to use the TK85 - MATRIX KEYPAD I2C ADAPTER module on an 
 - **SCL** → Arduino Uno R3 A5 (I2C clock line)
 - **NC** → Leave unconnected
 
-## Code
+# I2C Scan
 
-```cpp
-// Include Wire library for I2C communication
-// Arduino Uno R3 I2C pins are fixed: SDA=A4, SCL=A5
+### I2C Address Scan
+
+``` cpp
 #include <Wire.h>
 
-// I2C address of matrix keypad adapter module (check module documentation, usually 0x20 or 0x21)
-#define KEYPAD_ADDRESS 0x20
-
-// Keypad mapping (4x4 matrix keypad)
-char keymap[16] = "DCBA#9630852*741";
-
-// Debounce variables
-uint8_t stableKey = 16;   // 16 = NoKey
-uint8_t stableCount = 0;
-uint8_t lastKeypadKey = 16;
-
-// Function declaration
-int readKeypad();
-
-void setup() {
-  Wire.begin();
+void setup()
+{
   Serial.begin(9600);
-  Serial.println("Matrix keypad test");
-  Serial.println("Press keys to see key code output");
+  
+  while (!Serial);             // Leonardo: wait for serial monitor
+  Serial.println("\nI2C Scanner");
 }
 
-void loop() {
-  int key = readKeypad();
-  
-  if (key >= 0) {
-    Serial.print("Key pressed: number=");
-    Serial.print(key);
-    
-    if (key < 16) {
-      Serial.print(", character='");
-      Serial.print(keymap[key]);
-      Serial.print("'");
+
+void loop()
+{
+  byte error, address;
+  int nDevices;
+
+  Serial.print("SDA: ");
+  Serial.print(SDA);
+  Serial.print(",  SCL: ");
+  Serial.println(SCL);
+  Serial.println("Scanning...");
+
+  nDevices = 0;
+  for(address = 1; address < 127; address++ ) 
+  {
+    // The i2c_scanner uses the return value of
+    // the Write.endTransmisstion to see if
+    // a device did acknowledge to the address.
+    Wire.beginTransmission(address);
+    error = Wire.endTransmission();
+
+    if (error == 0)
+    {
+      Serial.print("I2C device found at address 0x");
+      if (address<16) 
+        Serial.print("0");
+      Serial.print(address,HEX);
+      Serial.println("  !");
+
+      nDevices++;
     }
-    Serial.println();
+    else if (error==4) 
+    {
+      Serial.print("Unknown error at address 0x");
+      if (address<16) 
+        Serial.print("0");
+      Serial.println(address,HEX);
+    }    
   }
-  
-  delay(50);
-}
+  if (nDevices == 0)
+    Serial.println("No I2C devices found\n");
+  else
+    Serial.println("done\n");
 
-// Read matrix keypad
-int readKeypad() {
-  uint8_t currentKey = 16;
-  uint8_t raw = 0xFF;
-  bool found = false;
-
-  // Mode A: rows = lower 4 bits (P0..P3), columns = upper 4 bits (P4..P7)
-  for (uint8_t col = 0; col < 4 && !found; col++) {
-    uint8_t out = (uint8_t)(0xFF & ~(1 << (4 + col)));
-    Wire.beginTransmission(KEYPAD_ADDRESS);
-    Wire.write(out);
-    if (Wire.endTransmission() != 0) {
-      continue;
-    }
-    delayMicroseconds(200);
-    
-    Wire.requestFrom(KEYPAD_ADDRESS, 1);
-    if (Wire.available()) {
-      raw = Wire.read();
-      uint8_t rows = raw & 0x0F;
-      if (rows != 0x0F) {
-        for (uint8_t row = 0; row < 4; row++) {
-          if (!(rows & (1 << row))) {
-            currentKey = row * 4 + col;
-            found = true;
-            break;
-          }
-        }
-      }
-    }
-  }
-
-  // Mode B: rows = upper 4 bits (P4..P7), columns = lower 4 bits (P0..P3)
-  if (!found) {
-    for (uint8_t col = 0; col < 4 && !found; col++) {
-      uint8_t out = (uint8_t)(0xFF & ~(1 << col));
-      Wire.beginTransmission(KEYPAD_ADDRESS);
-      Wire.write(out);
-      if (Wire.endTransmission() != 0) {
-        continue;
-      }
-      delayMicroseconds(200);
-      
-      Wire.requestFrom(KEYPAD_ADDRESS, 1);
-      if (Wire.available()) {
-        raw = Wire.read();
-        uint8_t rows = (raw >> 4) & 0x0F;
-        if (rows != 0x0F) {
-          for (uint8_t row = 0; row < 4; row++) {
-            if (!(rows & (1 << row))) {
-              currentKey = row * 4 + col;
-              found = true;
-              break;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  // Restore all high
-  Wire.beginTransmission(KEYPAD_ADDRESS);
-  Wire.write(0xFF);
-  Wire.endTransmission();
-        
-  // Debounce: need to read the same key twice consecutively to consider it pressed
-  if (currentKey < 16) {
-    if (currentKey == stableKey) {
-      if (stableCount < 255) stableCount++;
-    } else {
-      stableKey = currentKey;
-      stableCount = 1;
-    }
-
-    if (stableCount >= 2 && currentKey != lastKeypadKey) {
-      lastKeypadKey = currentKey;
-      return currentKey;
-    }
-  } else {
-    stableKey = 16;
-    stableCount = 0;
-    if (lastKeypadKey != 16) {
-      lastKeypadKey = 16;
-    }
-  }
-  
-  return -1;
+  delay(5000);           // wait 5 seconds for next scan
 }
 ```
+
+![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206114957.png]]
+## Sample Code
+
+#### Option 1: Using Arduino Library Manager (Easiest)
+
+1. Open the Arduino IDE.
+2. Go to **Sketch > Include Library > Manage Libraries**.
+3. Search for **"I2CKeyPad" (by Rob Tillaart)**.
+4. Click **Install** on the result.
+5. Restart the IDE if prompted.
+
+#### Option 2: Manual Install from GitHub
+
+1. Go to [https://github.com/RobTillaart/I2CKeyPad](https://github.com/RobTillaart/I2CKeyPad) and download the ZIP file (click **Code > Download ZIP**).
+2. In Arduino IDE, go to **Sketch > Include Library > Add .ZIP Library**.
+3. Select the downloaded ZIP file.
+4. Restart the IDE.
+
+Due to differences in the hardware layout between the Soft and Heavy Duty matrix keypads, you'll need to adjust the keymap at the start of your code.
+
+- For the Soft keypad: char keymap[19] = "DCBA#9630852*741NF";
+- For the Heavy Duty keypad: char keymap[19] = "D#0*C987B654A321NF";
+
+
+``` cpp
+#include "Wire.h"
+#include "I2CKeyPad.h"
+
+const uint8_t KEYPAD_ADDRESS = 0x20;
+
+I2CKeyPad keyPad(KEYPAD_ADDRESS);
+
+//Heavy Duty Keypad
+char keymap[19] = "D#0*C987B654A321NF";  //  N = NoKey, F = Fail
+
+//Soft Keypad
+//char keymap[19] = "DCBA#9630852*741NF";  //  N = NoKey, F = Fail
+
+void setup()
+{
+  delay(2000);
+  Serial.begin(9600);
+  Serial.println();
+  Serial.println(__FILE__);
+  Serial.print("I2C_KEYPAD_LIB_VERSION: ");
+  Serial.println(I2C_KEYPAD_LIB_VERSION);
+  Serial.println();
+
+  Wire.begin(SDA,SCL);
+  Wire.setClock(400000);
+
+  if (keyPad.begin() == false)
+  {
+    Serial.println("\nERROR: cannot communicate to keypad.\nPlease reboot.\n");
+    while (1);
+  }
+
+  keyPad.loadKeyMap(keymap);
+}
+
+
+void loop()
+{
+  if (keyPad.isPressed())
+  {
+    char ch = keyPad.getChar();     //  note we want the translated char
+    int key = keyPad.getLastKey();
+    Serial.print(key);
+    Serial.print(" \t");
+    Serial.println(ch);
+    delay(100);
+  }
+}
+
+```
+
 
 ## Effect
 
 ![Effect](images/TK85-uno.jpg)
 
-![Effect](images/TK85-uno-uart.png)
+![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206115147.png]]
 
 
 ## Code Walkthrough
 
-**Lines 1–3: Include library**
+**Includes and address**
 
-```cpp
-// Include Wire library for I2C communication
-// Arduino Uno R3 I2C pins are fixed: SDA=A4, SCL=A5
-#include <Wire.h>
-```
+- **`Wire.h`** — I2C communication. **`I2CKeyPad.h`** — keypad library.
+- **`KEYPAD_ADDRESS = 0x20`** — I2C address of the keypad (use I2C scan if different).
+- **`keyPad(KEYPAD_ADDRESS)`** — keypad object.
+- **`keymap[19]`** — maps key index to character. Use the line that matches your keypad (Heavy Duty or Soft).
 
-- **`#include <Wire.h>`:** Include Wire library for I2C communication (Arduino Uno R3 I2C pins are fixed: SDA=A4, SCL=A5).
+**setup()**
 
-**Line 5: Define I2C address**
+- **`Serial.begin(9600)`** — for printing to Serial Monitor.
+- **`Wire.begin(SDA, SCL)`** — start I2C on A4 (SDA) and A5 (SCL).
+- **`Wire.setClock(400000)`** — 400 kHz I2C speed.
+- **`keyPad.begin()`** — init keypad; stops in a loop if it fails.
+- **`keyPad.loadKeyMap(keymap)`** — load the keymap so keys give the right characters.
 
-```cpp
-// I2C address of matrix keypad adapter module (check module documentation, usually 0x20 or 0x21)
-#define KEYPAD_ADDRESS 0x20
-```
+**loop()**
 
-- **`KEYPAD_ADDRESS`:** I2C address of matrix keypad adapter module (check module documentation, usually 0x20 or 0x21).
-
-**Lines 7–9: Define keypad mapping**
-
-```cpp
-// Keypad mapping (4x4 matrix keypad)
-char keymap[16] = "DCBA#9630852*741";
-```
-
-- **`keymap[16]`:** Character mapping array for 4×4 matrix keypad, 16 characters corresponding to 16 keys (D, C, B, A, #, 9, 6, 3, 0, 8, 5, 2, *, 7, 4, 1).
-
-**Lines 11–13: Define debounce variables**
-
-```cpp
-// Debounce variables
-uint8_t stableKey = 16;   // 16 = NoKey
-uint8_t stableCount = 0;
-uint8_t lastKeypadKey = 16;
-```
-
-- **`stableKey`:** Current stable key number (16 means no key).
-- **`stableCount`:** Stability count for debouncing (need to read the same key twice consecutively to consider it pressed).
-- **`lastKeypadKey`:** Previously detected key number, used to avoid repeated output.
-
-**Line 15: Function declaration**
-
-```cpp
-// Function declaration
-int readKeypad();
-```
-
-- **`readKeypad()`:** Function declaration to read matrix keypad keys.
-
-**Lines 17–23: Initialization (setup function)**
-
-```cpp
-void setup() {
-  Wire.begin();
-  Serial.begin(9600);
-  Serial.println("Matrix keypad test");
-  Serial.println("Press keys to see key code output");
-}
-```
-
-- **`setup()`:** Runs once when the Arduino starts.
-- **`Wire.begin()`:** Initialize I2C communication.
-- **`Serial.begin(9600)`:** Start serial at 9600 baud.
-- **`Serial.println(...)`:** Print program start message and instructions to Serial Monitor.
-
-**Lines 25–33: Main loop (loop function)**
-
-```cpp
-void loop() {
-  int key = readKeypad();
-  
-  if (key >= 0) {
-    Serial.print("Key pressed: number=");
-    Serial.print(key);
-    
-    if (key < 16) {
-      Serial.print(", character='");
-      Serial.print(keymap[key]);
-      Serial.print("'");
-    }
-    Serial.println();
-  }
-  
-  delay(50);
-}
-```
-
-- **`loop()`:** Runs repeatedly.
-- **`readKeypad()`:** Call function to read matrix keypad keys, returns key number (0-15) or -1 (no key).
-- **`if (key >= 0)`:** Check if key press detected.
-- **`if (key < 16)`:** Check if key number is in valid range (0-15), if yes then display corresponding character.
-- **`keymap[key]`:** Get corresponding character based on key number.
-- **`Serial.print(...)` and `Serial.println(...)`:** Print key number and character to Serial Monitor.
-- **`delay(50)`:** Wait 50 milliseconds before reading again to avoid reading too fast and control output frequency.
-
-**Lines 35–119: Read matrix keypad function (readKeypad function)**
-
-```cpp
-// Read matrix keypad
-int readKeypad() {
-  // ... scanning logic for Mode A and Mode B ...
-  // ... debounce logic ...
-  return -1;
-}
-```
-
-- **`readKeypad()` function:** Function to read matrix keypad keys, returns key number (0-15) or -1 (no key).
-- **Mode A and Mode B:** Try two different row-column configurations to adapt to different keypad connection methods.
-- **`Wire.beginTransmission(KEYPAD_ADDRESS)`:** Start I2C transmission, specify I2C address of matrix keypad adapter module.
-- **`Wire.write(out)`:** Write data to I2C device, set column output (pull one column low).
-- **`Wire.requestFrom(KEYPAD_ADDRESS, 1)`:** Request to read 1 byte of data from I2C device.
-- **`raw & 0x0F` and `(raw >> 4) & 0x0F`:** Extract row data (lower 4 bits or upper 4 bits).
-- **`row * 4 + col`:** Calculate key number (row number × 4 + column number).
-- **Debounce logic:** Need to read the same key twice consecutively to consider it pressed, avoid false triggers.
-- **`return currentKey`:** Return detected key number.
-- **`return -1`:** If no key detected or key unstable, return -1.
+- **`keyPad.isPressed()`** — true when a key is pressed.
+- **`keyPad.getChar()`** — the character for that key (from keymap).
+- **`keyPad.getLastKey()`** — key index (0–15).
+- **`Serial.print(key)` / `Serial.println(ch)`** — print index and character.
+- **`delay(100)`** — short debounce so one press isn’t read many times.
