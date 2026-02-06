@@ -28,9 +28,8 @@ Beyond voltage flexibility, the TK50 also boasts **four versatile operating mode
 
 Here's a quick comparison:
 
-
 | Features         | TK50 | HC-SR04 |     |
-| ---------------- | ---- | ------- | --- |
+| :--------------- | :--- | :------ | --- |
 | **Voltage 3.3V** | ✓    | X       |     |
 | **Voltage 5V**   | ✓    | ✓       |     |
 | **GPIO Mode**    | ✓    | ✓       |     |
@@ -38,29 +37,22 @@ Here's a quick comparison:
 | **UART Mode**    | ✓    | X       |     |
 | **1-Wire Mode**  | ✓    | X       |     |
 | **Lead-Free**    | ✓    | X       |     |
-
-
 # Schematic Diagram
 
-
-
+![](images/Pasted%20image%2020250527214858.png)
 # Mode Selection
 
 The TK50 sensor operates in **GPIO Mode** by default. To select a different interface, simply solder **Jumper 1** and **Jumper 2** according to the configurations in the table below. "Short" indicates that the jumper pads should be soldered to close the circuit.
 
+![](images/Pasted%20image%2020250527214057.png)
 
-
-
-| Mode   | Jumper 1 | Jumper 2 |
-| ------ | -------- | -------- |
-| GPIO   | Open     | Open     |
-| I2C    | Short    | Open     |
-| UART   | Open     | Short    |
-| 1-Wire | Short    | Short    |
-
-
+|Mode|Jumper 1|Jumper 2|
+|:--|:--|:--|
+|GPIO|Open|Open|
+|I2C|Short|Open|
+|UART|Open|Short|
+|1-Wire|Short|Short|
 # Pinout
-
 
 | Pin  | Function  | GPIO    | UART | I2C | 1-Wire |
 | ---- | --------- | ------- | ---- | --- | ------ |
@@ -69,10 +61,9 @@ The TK50 sensor operates in **GPIO Mode** by default. To select a different inte
 | Echo |           | Echo    | TX   | SDA | NC     |
 | Trig |           | Trigger | RX   | SCL | Data   |
 
-
 # Dimensions
 
-
+![](images/Pasted%20image%2020250527213824.png)
 
 # Sample Code
 
@@ -84,9 +75,9 @@ To get started, please install the necessary library from GitHub in your Arduino
 
 **GPIO is the sensor's default mode.** To use it, simply leave both Jumper 1 and Jumper 2 open.
 
+![](images/Pasted%20image%2020250527221459.png)
 
-
-```cpp
+``` cpp
 #include <AlashUltrasonic.h>
 
 // GPIO pins
@@ -113,9 +104,9 @@ void loop() {
 
 To activate **UART mode**, you should **leave Jumper 1 open and short Jumper 2**.
 
+![](images/Pasted%20image%2020250527221909.png)
 
-
-```cpp
+``` cpp
 #include <AlashUltrasonic.h>
 
 const uint8_t RX_PIN = 3;
@@ -142,9 +133,9 @@ void loop() {
 
 To activate **I2C mode**, you should **short Jumper 1 and leave Jumper 2 open**.
 
+![](images/Pasted%20image%2020250527221932.png)
 
-
-```cpp
+``` cpp
 #include <AlashUltrasonic.h>
 
 const uint8_t I2C_ADDRESS = 0x57; // I2C address
@@ -168,9 +159,9 @@ void loop() {
 
 To activate **One-Wire mode**, simply **short both Jumper 1 and Jumper 2**.
 
+![](images/Pasted%20image%2020250527222005.png)
 
-
-```cpp
+``` cpp
 #include <AlashUltrasonic.h>
 
 const uint8_t ONE_WIRE_PIN = 5; // 1-Wire pin
@@ -193,9 +184,9 @@ void loop() {
 
 # Support
 
-If you encounter any issues, please go to [https://lonelybinary.com](https://lonelybinary.com)  and click the Support button located in the bottom right corner. Our team is ready to assist you.
+If you encounter any issues, please go to [https://lonelybinary.com ](https://lonelybinary.com ) and click the Support button located in the bottom right corner. Our team is ready to assist you.
 
-[Technical Support](https://lonelybinary.com)
+[![Technical Support](images/Pasted%20image%2020250527102623.png)](https://lonelybinary.com)
 
 # Thank You
 
@@ -203,7 +194,6 @@ Thank you for choosing TinkerBlock to fuel your passion for STEM! Whether you’
 
 **For school orders, wholesale inquiries, or custom business solutions, please contact us to discuss your specific needs.**
 
-[office@lonelybinary.com](office@lonelybinary.com)
+[office@lonelybinar.com](office@lonelybinary.com)
 
 > **Unleash Your Creativity with TinkerBlock – Where Coding Meets the Real World!**
-
