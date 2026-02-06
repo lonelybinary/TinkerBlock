@@ -85,7 +85,7 @@ void loop() {
 
 Upload the code to the ESP32. Once it’s uploaded, you should see the ESP32 appear online under **Things**. The values from the Thing will be updated every 10 seconds.
 
-![](app://0eb63d662f327238b66aa7ddf5f4ae488157/Users/lonelybinary/Library/Mobile%20Documents/iCloud%7Emd%7Eobsidian/Documents/TinkerBlock/images/Pasted_image_20250210105115.png?1739145075000)
+<!-- Image removed: Obsidian app:// link not compatible with GitHub -->
 
 ![](Sensors/TK38%20-%20DHT11/images/20260206-18.png)
 
