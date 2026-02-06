@@ -26,9 +26,8 @@ You can also change the I2C address by shorting the A0, A1, and/or A2 pads on th
 
 # Appearance
 
-
-| Front     | Back     | Side     |
-| --------- | -------- | -------- |
+| ![Front](images/TK85-F.png) | ![Back](images/TK85-B.png) | ![Side](images/TK85-S.png) |
+| :------------------------: | :------------------------: | :------------------------: |
 | **Front** | **Back** | **Side** |
 
 
