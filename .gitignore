@@ -11,6 +11,7 @@ Desktop.ini
 
 # Obsidian
 .obsidian/
+.vscode/
 
 # _CN
 *_CN.*

@@ -1,14 +1,4 @@
-Introduction to TinkerBlock Series: Modular STEM Education Platform
-
-## What is TinkerBlock Series?
-
-The **TinkerBlock Series** is a revolutionary STEM education platform designed and crafted by **Lonely Binary Australia**. It seamlessly bridges the gap between electronics and computer programming, making it perfect for students, educators, and hobbyists who want to explore, create, and innovate with real-world hardware interaction.
-
-Unlike traditional electronics projects that require complex wiring and are difficult to modify, TinkerBlock offers a **modular ecosystem** where you can program in **C or Python** to interact with real-world elements like temperature sensors, LED displays, and motors.
-
-## Products
-
-### TinkerBlock 46-Piece Sensor Module Kit
+# TinkerBlock 46-Piece Sensor Module Kit
 
 ![](images/Pasted image 20260206134132.png)
 
@@ -61,36 +51,5 @@ Unlike traditional electronics projects that require complex wiring and are diff
 | 44    | TK95 | [Extreme Bright Dual LEDs](Sensors/TK95%20-%20Extreme%20Bright%20Dual%20LEDs)   |
 | 45    | TK96 | [Mechanical Key And LED](Sensors/TK96%20-%20Mechanical%20Key%20And%20LED)       |
 | 46    | TK97 | [Logic Level Converter](Sensors/TK97%20-%20Logic%20Level%20Conventor)           |
-
-
-### DHT22 and DHT11 Digital Temperature Humidity Sensor Set
-
-![](images/Pasted image 20260206135840.png)
-
-
-| Index | Code | Sensor                            |
-| ----- | ---- | --------------------------------- |
-| 01    | TK38 | [DHT11](Sensors/TK38%20-%20DHT11) |
-| 02    | TK39 | [DHT22](Sensors/TK39%20-%20DHT22) |
-
-
-### Ultrasonic Distance Sensor
-
-![](images/Pasted image 20260206140358.png)
-
-
-| Index | Code | Sensor                                                      |
-| ----- | ---- | ----------------------------------------------------------- |
-| 01    | TK50 | [Ultrasonic Sensor](Sensors/TK50%20-%20Ultrasonic%20Sensor) |
-
-
-### TM1637 Segment Display Kit with Enclosures & Film Covers
-
-![](images/Pasted image 20260206140826.png)
-
-
-| Index | Code | Sensor                                                                 |
-| ----- | ---- | ---------------------------------------------------------------------- |
-| 01    | TK51 | [TM1637 Segment Display](Sensors/TK51%20-%20TM637%204-Digit%20Display) |
 
 
