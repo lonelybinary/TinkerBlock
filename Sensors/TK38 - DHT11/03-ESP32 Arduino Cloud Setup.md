@@ -7,29 +7,29 @@ Let's workthrough the steps to edit and upload the code using Arduino Cloud.
 Go to the [Arduino Cloud](https://create.arduino.cc/) website and create an account (or log in if you already have one).
 
 Click on **Cloud**, then select **Sketches** from the left menu.
-![](Sensors/TK38%20-%20DHT11/images/20260206.png)
+![](images/20260206.png)
 
 
 
-![](Sensors/TK38%20-%20DHT11/images/20260206-1.png)
+![](images/20260206-1.png)
 
 Create a **New Sketch** and click on **Select Device**. If this is your first time, you’ll need to install the **Arduino Cloud Agent**. Or you can download and install from [https://cloud.arduino.cc/download-agent](https://cloud.arduino.cc/download-agent)
 
-![](Sensors/TK38%20-%20DHT11/images/20260206-2.png)
+![](images/20260206-2.png)
 
 <!-- Image removed: Obsidian app:// link not compatible with GitHub -->
 
-![](Sensors/TK38%20-%20DHT11/images/20260206-3.png)
+![](images/20260206-3.png)
 
 After installing the **Arduino Cloud Agent** and connecting the ESP32 to your PC, you should see the serial port of the ESP32 appear in the cloud.
 
 Double-click the **Unknown board** and search for **ESP32 Dev Module**.
 
-![](Sensors/TK38%20-%20DHT11/images/20260206-4.png)
+![](images/20260206-4.png)
 
 Let’s install the **DHTesp** library by clicking the library icon on the left-hand side. Then, search for and include the **DHT sensor library for ESPx**.
 
-![](Sensors/TK38%20-%20DHT11/images/20260206-5.png)
+![](images/20260206-5.png)
 
 Paste the following code into the Arduino Cloud Editor, connect the DHT22 sensor to the ESP32’s GPIO 23, and upload the code.
 
@@ -76,4 +76,4 @@ void loop() {
 
 Congratulations! You have successfully uploaded the code to the ESP32 using Arduino Cloud. Well done!
 
-![](Sensors/TK38%20-%20DHT11/images/20260206-6.png)
+![](images/20260206-6.png)
