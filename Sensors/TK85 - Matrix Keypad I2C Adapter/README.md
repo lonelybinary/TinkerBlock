@@ -5,19 +5,17 @@ A matrix keypad is a grid of buttons (like on a phone or calculator) that saves 
 ### How It Works Simply:
 
 - **Setup**: Keys are arranged in rows (horizontal) and columns (vertical). For a 4x4 keypad (16 keys), you only need 8 wires: 4 for rows, 4 for columns.
-
 - **Press Detection**: A controller (like Arduino) scans by sending a signal down one row at a time and checking columns for a connection.
-    - Press a key? It connects its row and column, so the controller detects which one.
+  - Press a key? It connects its row and column, so the controller detects which one.
 
 It's like a crossword puzzle: rows and columns intersect at keys, and scanning finds the "word" (pressed key). For projects, plug it in and use simple code to read inputs!
 
-![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206114533.png]]
+![Matrix keypad diagram](images/Pasted%20image%2020260206114533.png)
 
+![Matrix keypad diagram](images/Pasted%20image%2020260206114639.png)
 
-![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206114639.png]]
+![Matrix keypad diagram](images/Pasted%20image%2020260206114651.png)
 
-
-![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206114651.png]]
 # Lonely Binary Matrix Keypad I2C Adapter
 
 Usually, a standard 4x4 matrix keypad requires 8 GPIO pins. We provide an I2C adapter, which means you can connect this keypad to the I2C bus using only two GPIO pins. Since it uses the I2C bus, you can add more sensors to the same bus. What a space saver!
@@ -28,9 +26,11 @@ You can also change the I2C address by shorting the A0, A1, and/or A2 pads on th
 
 # Appearance
 
-| ![Front](images/TK85-F.png) | ![Back](images/TK85-B.png) | ![Side](images/TK85-S.png) |
-| :-----------------------: | :-----------------------: | :-----------------------: |
-|          **Front**          |          **Back**          |          **Side**          |
+
+| Front     | Back     | Side     |
+| --------- | -------- | -------- |
+| **Front** | **Back** | **Side** |
+
 
 The module has a matrix keypad interface and a 4-pin header interface. Each pin can be identified by the silkscreen (text printed next to the pin).
 

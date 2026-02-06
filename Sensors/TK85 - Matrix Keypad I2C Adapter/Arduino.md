@@ -77,7 +77,7 @@ void loop()
 }
 ```
 
-![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206114957.png]]
+![I2C scan sample](images/Pasted%20image%2020260206114957.png)
 ## Sample Code
 
 #### Option 1: Using Arduino Library Manager (Easiest)
@@ -158,7 +158,7 @@ void loop()
 
 ![Effect](images/TK85-uno.jpg)
 
-![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206115147.png]]
+![Keypad effect](images/Pasted%20image%2020260206115147.png)
 
 
 ## Code Walkthrough
