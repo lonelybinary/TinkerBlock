@@ -125,8 +125,6 @@ while True:
 
 ![Effect](images/TK85-pico.jpg)
 
-![Effect](images/TK85-pico-uart.png)
-
 
 ## Code Walkthrough
 

@@ -45,8 +45,6 @@ while True:
 
 ![Effect](images/TK09-pico.jpg)
 
-![Effect](images/TK09-pico-uart.gif)
-
 
 ## Code Walkthrough
 

@@ -58,8 +58,6 @@ while True:
 
 ![Effect](images/TK65-pico.jpg)
 
-![Effect](images/TK65-pico-uart.png)
-
 
 ## Code Walkthrough
 
