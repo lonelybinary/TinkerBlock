@@ -12,7 +12,7 @@ You will learn the following in this guide:
 
 - Open **Arduino IDE** > **Sketch** > **Include Library** > **Manage Libraries**.
 - Search for **“DHT ESP”** and install it.
-![](images/Pasted%20image%2020260206122405.png)
+![](Sensors/TK38%20-%20DHT11/images/Pasted%20image%20260206122405.png)
 # Project - Interactive with DHT Sensor
 
 This code is for reading temperature and humidity data from a **DHT11 sensor** using an **Arduino**. 
@@ -157,7 +157,7 @@ delay(FREQUENCY) pauses the program for **2 seconds** (2000 milliseconds). This 
 
 This process will continue repeatedly as long as the Arduino is powered on. Here is the output from Serial Monitor.
 
-![](images/Pasted%20image%2020260206122454.png)
+![](Sensors/TK38%20-%20DHT11/images/Pasted%20image%20260206122454.png)
 
 # Summary
 

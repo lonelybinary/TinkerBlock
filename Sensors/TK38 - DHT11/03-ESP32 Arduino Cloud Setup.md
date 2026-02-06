@@ -17,7 +17,7 @@ Create a **New Sketch** and click on **Select Device**. If this is your first
 
 ![](Sensors/TK38%20-%20DHT11/images/20260206-2.png)
 
-![](app://0eb63d662f327238b66aa7ddf5f4ae488157/Users/lonelybinary/Library/Mobile%20Documents/iCloud%7Emd%7Eobsidian/Documents/TinkerBlock/images/Pasted_image_20250210095133.png?1739141493000)
+<!-- Image removed: Obsidian app:// link not compatible with GitHub -->
 
 ![](Sensors/TK38%20-%20DHT11/images/20260206-3.png)
 
