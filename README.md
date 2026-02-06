@@ -62,3 +62,27 @@ Unlike traditional electronics projects that require complex wiring and are diff
 | 46    | TK97 | [Logic Level Converter](Sensors/TK97%20-%20Logic%20Level%20Conventor/README.md)           |
 
 
+### DHT22 and DHT11 Digital Temperature Humidity Sensor Set
+![](images/Pasted%20image%2020260206135840.png)
+
+| Index | Code | Sensor                                      |
+| ----- | ---- | ------------------------------------------- |
+| 01    | TK38 | [DHT11](Sensors/TK38%20-%20DHT11/README.md) |
+| 02    | TK39 | [DHT22](Sensors/TK39%20-%20DHT22/README.md) |
+
+### Ultrasonic Distance Sensor
+
+![](images/Pasted%20image%2020260206140358.png)
+
+| Index | Code | Sensor                                                                |
+| ----- | ---- | --------------------------------------------------------------------- |
+| 01    | TK50 | [Ultrasonic Sensor](Sensors/TK50%20-%20Ultrasonic%20Sensor/README.md) |
+
+### TM1637 Segment Display Kit with Enclosures & Film Covers
+
+![](images/Pasted%20image%2020260206140826.png)
+
+| Index | Code | Sensor                                                                           |
+| ----- | ---- | -------------------------------------------------------------------------------- |
+| 01    | TK51 | [TM1637 Segment Display](Sensors/TK51%20-%20TM637%204-Digit%20Display/README.md) |
+
