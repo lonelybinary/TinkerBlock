@@ -1,7 +1,15 @@
-# TinkerBlock 46-Piece Sensor Module Kit
 
-![](images/Pasted image 20260206134132.png)
+![](images/Pasted%20image%2020260206134132.png)
 
+Experience premium quality with the Gold Edition Immersion Gold 46-Piece Sensor and Module Kit – where real gold meets cutting-edge electronics. This elite collection features 46 high-precision sensors, actuators, displays, and modules, all enhanced with genuine immersion gold (ENIG) plating technology.
+
+Using actual gold deposition, this process creates ultra-thin, uniform gold layers on PCB contacts for enhanced conductivity, strong oxidation resistance, and long-term durability, offering clear advantages over standard tin or nickel finishes. Fully lead-free and RoHS-compliant, it ensures eco-safety and meets strict global standards, making it perfect for educational institutions, professional prototyping, and environmentally conscious makers.
+
+Each module features clear pin labeling and supports various interface types such as DIGITAL, ANALOG, I2C, SPI, and PWM for easy connectivity. The kit comes with reference code files and connection guides to get you started quickly—no prior experience required.
+
+Explore environmental sensing with thermistors and light sensors, interact with inputs like buttons and joysticks, output signals via LEDs and buzzers, and expand functionality with memory, displays, and motor drivers. Built for durability and precision, these modules are perfect for prototyping, STEM education, and advanced projects.
+
+[Amazon US Link](https://www.amazon.com/TinkerBlock-Lead-Free-Compatible-Raspberry-Prototyping/dp/B0GF212QHL)
 
 | Index | Code | Sensor                                                                          |
 | ----- | ---- | ------------------------------------------------------------------------------- |
