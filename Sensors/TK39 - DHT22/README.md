@@ -1,0 +1,1 @@
+Refer to the TK38 - DHT11
