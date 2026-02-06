@@ -64,8 +64,6 @@ while True:
 
 ## Effect
 
-![Effect](images/TK31-pico-uart.png)
-
 ![Effect](images/TK31-pico.jpg)
 
 

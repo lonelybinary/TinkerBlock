@@ -56,8 +56,6 @@ void loop() {
 
 ![Effect](images/TK27-uno.jpg)
 
-![Effect](images/TK27-uno-uart.png)
-
 
 ## Code Walkthrough
 

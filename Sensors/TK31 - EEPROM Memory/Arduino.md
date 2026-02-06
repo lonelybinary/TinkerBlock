@@ -74,8 +74,6 @@ byte readEEPROM(int address) {
 
 ## Effect
 
-![Effect](images/TK31-uno-uart.png)
-
 ![Effect](images/TK31-uno.gif)
 
 

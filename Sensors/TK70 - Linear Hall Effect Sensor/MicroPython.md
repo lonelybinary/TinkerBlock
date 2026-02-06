@@ -42,7 +42,6 @@ while True:
 ## Effect
 
 ![Effect](images/TK70-pico.gif)
-![Effect](images/tk70-picouart.png)
 
 ## Code Walkthrough
 
