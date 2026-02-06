@@ -1,6 +1,30 @@
-# Function
+# Matrix Keypad
 
-This module is a matrix keypad adapter module that converts matrix keypads to I2C interface. By reading key states through I2C interface, it simplifies wiring and saves control board pins. Can be used to make password locks, calculators, remote controls, and other applications.
+A matrix keypad is a grid of buttons (like on a phone or calculator) that saves wiring by using rows and columns instead of separate wires for each key.
+
+### How It Works Simply:
+
+- **Setup**: Keys are arranged in rows (horizontal) and columns (vertical). For a 4x4 keypad (16 keys), you only need 8 wires: 4 for rows, 4 for columns.
+
+- **Press Detection**: A controller (like Arduino) scans by sending a signal down one row at a time and checking columns for a connection.
+    - Press a key? It connects its row and column, so the controller detects which one.
+
+It's like a crossword puzzle: rows and columns intersect at keys, and scanning finds the "word" (pressed key). For projects, plug it in and use simple code to read inputs!
+
+![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206114533.png]]
+
+
+![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206114639.png]]
+
+
+![[Sensors/TK85 - Matrix Keypad I2C Adapter/images/Pasted image 20260206114651.png]]
+# Lonely Binary Matrix Keypad I2C Adapter
+
+Usually, a standard 4x4 matrix keypad requires 8 GPIO pins. We provide an I2C adapter, which means you can connect this keypad to the I2C bus using only two GPIO pins. Since it uses the I2C bus, you can add more sensors to the same bus. What a space saver!
+
+The Lonely Binary Matrix Keypad I2C adapter includes built-in pull-up resistors for both SDA and SCL lines, as required by the I2C bus. If you add more sensors that also have their own built-in pull-up resistors, you can easily disable the keypad's pull-ups by cutting the I2C PULL-UP pad on the back.
+
+You can also change the I2C address by shorting the A0, A1, and/or A2 pads on the back.
 
 # Appearance
 
@@ -30,3 +54,4 @@ The module has a matrix keypad interface and a 4-pin header interface. Each pin 
 2. VCC → Control board 3.3V or 5V
 3. SDA → Control board SDA pin
 4. SCL → Control board SCL pin
+
