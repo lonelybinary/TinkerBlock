@@ -2,7 +2,16 @@
 
 ## Goal
 
-This example shows how to use the TK51 - 4-DIGIT DISPLAY module on an Arduino Uno R3 to display numbers.
+This example shows how to use the TK51 - 4-DIGIT DISPLAY module on an Arduino Uno R3 to display numbers. The TK51 comes in two variants: one for clock display with a colon (:) in the middle, and another for number display with a decimal point (.) after each digit.
+
+We'll use the TM1637 library from https://github.com/avishorp/TM1637 to make it easy.
+
+## Install the TM1637 Library
+Download the library from https://github.com/avishorp/TM1637 (click the green "Code" button and select "Download ZIP").
+Open the Arduino IDE.
+Go to Sketch > Include Library > Add .ZIP Library...
+Select the downloaded ZIP file and click OK.
+Restart the Arduino IDE if needed. The library should now be available.
 
 ## Wiring
 
