@@ -5,8 +5,9 @@ This module is a 4-digit 7-segment display module using TM1637 driver chip. Can 
 # Appearance
 
 | ![Front](images/TK51-F.png) | ![Back](images/TK51-B.png) | ![Side](images/TK51-S.png) |
-| :-----------------------: | :-----------------------: | :-----------------------: |
-|          **Front**          |          **Back**          |          **Side**          |
+| :------------------------: | :------------------------: | :------------------------: |
+| **Front** | **Back** | **Side** |
+
 
 The module has 4 seven-segment displays and a 4-pin header interface. Each pin can be identified by the silkscreen (text printed next to the pin).
 
@@ -30,3 +31,4 @@ The module has 4 seven-segment displays and a 4-pin header interface. Each pin c
 2. VCC → Control board 3.3V or 5V
 3. CLOCK → Control board digital pin (use the pin defined in your program)
 4. DATA → Control board digital pin (use the pin defined in your program)
+
