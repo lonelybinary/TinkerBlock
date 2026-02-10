@@ -6,6 +6,8 @@ This example shows how to blink the TK01-XL LED on a Raspberry Pi Pico 2 and cov
 
 ## Wiring
 
+![Wiring diagram](images/wiring_diagram_pico2-1.png)
+
 - **GND** → Raspberry Pi Pico 2 GND
 - **SIGNAL** → Raspberry Pi Pico 2 GPIO 0 (or the pin you set as `LED_PIN` in code)
 - **NC** → Leave unconnected
@@ -35,7 +37,11 @@ while True:
     time.sleep(1)             # Wait 1 second
 ```
 
-# Code Walkthrough
+## Effect
+
+![Effect](images/TK01-pico.gif)
+
+## Code Walkthrough
 
 **Lines 1–14: Docstring**
 

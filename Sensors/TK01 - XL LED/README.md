@@ -27,6 +27,12 @@ The module has one blue LED and a 4-pin header. You can identify each pin by the
 - Operating voltage: 3.3 V or 5 V
 - Low power consumption
 
+# Video
+
+[![TK01 XL LED Demo](https://img.youtube.com/vi/Vk0kSiL5XCw/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vk0kSiL5XCw)
+
+*Click the image above to watch the TK01-XL LED demo on YouTube.*
+
 # Quick Wiring (3 steps)
 
 1. GND → controller GND
