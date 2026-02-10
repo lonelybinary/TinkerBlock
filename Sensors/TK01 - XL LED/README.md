@@ -1,4 +1,8 @@
-[![TK01 XL LED 演示](https://img.youtube.com/vi/Vk0kSiL5XCw/hqdefault.jpg)](https://www.youtube.com/watch?v=Vk0kSiL5XCw)
+# YouTube
+
+[![TK01 XL LED Demo](https://img.youtube.com/vi/Vk0kSiL5XCw/hqdefault.jpg)](https://www.youtube.com/watch?v=Vk0kSiL5XCw)
+
+*Click the image above to watch the demo video.*
 
 # Function
 
