@@ -13,7 +13,7 @@
  */
 
 // Pin number: change this to match your wiring
-#define LED_PIN 13  // Arduino digital pin connected to SIGNAL (e.g. D13)
+#define LED_PIN 3  // Arduino digital pin connected to SIGNAL (e.g. D13)
 
 void setup() {
   // Set LED pin as output (to control on/off)
