@@ -1,3 +1,5 @@
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vk0kSiL5XCw?si=54zT6MNugdQ-jKag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # Function
 
 This module is a blue LED module. You can control the LED on/off via code. An LED is a light-emitting diode that emits blue light when powered. It can be used as an indicator or decorative light.
@@ -26,12 +28,6 @@ The module has one blue LED and a 4-pin header. You can identify each pin by the
 - Blue LED, moderate brightness
 - Operating voltage: 3.3 V or 5 V
 - Low power consumption
-
-# Video
-
-[![TK01 XL LED Demo](https://img.youtube.com/vi/Vk0kSiL5XCw/maxresdefault.jpg)](https://www.youtube.com/watch?v=Vk0kSiL5XCw)
-
-*Click the image above to watch the TK01-XL LED demo on YouTube.*
 
 # Quick Wiring (3 steps)
 
