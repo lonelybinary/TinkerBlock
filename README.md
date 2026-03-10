@@ -18,3 +18,12 @@ Unlike traditional electronics projects that require complex wiring and are diff
 
 
 [Ultrasonic Distance Sensor Kit](Ultrasonic%20Distance%20Sensor%20Kit.md)
+
+---
+
+## Directory
+
+| Directory | Description |
+|-----------|-------------|
+| [TinkerBlock Arduino Beginner Workshop](TinkerBlock%20Arduino%20Beginner%20Workshop/) | Arduino beginner course (45 lessons): environment setup, wiring, code, hands-on |
+| [Sensors](Sensors/) | TinkerBlock modules (TK01–TK94, etc.): detailed description, wiring, sample code |
