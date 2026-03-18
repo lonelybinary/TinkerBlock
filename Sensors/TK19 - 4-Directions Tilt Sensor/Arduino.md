@@ -10,77 +10,68 @@ This example shows how to use the TK19 - 4-DIRECTIONs TIL SENSOR module on an Ar
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
-- **NC** → Leave unconnected
+- **A / B / C / D** → Any 4 Arduino digital pins (e.g. D2–D5)
+ 
+> Wire A/B/C/D according to the silkscreen labels.
 
 ## Code
 
 ```cpp
-// Pin number: change these to match your wiring
-#define A_PIN 2      // Arduino digital pin connected to A (as common, output LOW)
-#define B_PIN 3      // Arduino digital pin connected to B (INPUT_PULLUP, detect direction B)
-#define C_PIN 4      // Arduino digital pin connected to C (INPUT_PULLUP, detect direction C)
-#define D_PIN 5      // Arduino digital pin connected to D (INPUT_PULLUP, detect direction D)
+// Drive-low scan (recommended)
+// Idea: Drive ONE of A/B/C/D LOW (output), read the other three as INPUT_PULLUP.
+// If the internal ball shorts two contacts, the partner input will be pulled LOW.
+
+// Update these 4 pins to match your wiring.
+// Order MUST be: A, B, C, D
+const uint8_t PINS[4] = {2, 3, 4, 5};
+const char*   N[4]    = {"A", "B", "C", "D"};
+
+static void setHiZAll() {
+  for (int i = 0; i < 4; i++) {
+    pinMode(PINS[i], INPUT_PULLUP);
+  }
+}
+
+static void driveLow(int i) {
+  pinMode(PINS[i], OUTPUT);
+  digitalWrite(PINS[i], LOW);
+}
+
+static int findPulledLow(int driveIdx) {
+  for (int j = 0; j < 4; j++) {
+    if (j == driveIdx) continue;
+    if (digitalRead(PINS[j]) == LOW) return j;
+  }
+  return -1;
+}
 
 void setup() {
-  // Start serial for debugging (9600 baud)
   Serial.begin(9600);
-  
-  // Initialize pin modes
-  pinMode(A_PIN, OUTPUT);        // Set A pin as output (as common)
-  pinMode(B_PIN, INPUT_PULLUP);  // Set B pin as INPUT_PULLUP (detect direction B tilt)
-  pinMode(C_PIN, INPUT_PULLUP);  // Set C pin as INPUT_PULLUP (detect direction C tilt)
-  pinMode(D_PIN, INPUT_PULLUP);  // Set D pin as INPUT_PULLUP (detect direction D tilt)
-  
-  // Set A pin to LOW (as common/ground)
-  digitalWrite(A_PIN, LOW);
-  
-  Serial.println("4-direction tilt sensor program started");
-  Serial.println("Detecting tilt status in four directions");
-  Serial.println("A pin as common (LOW), B/C/D pins detect tilt (LOW=tilt)");
+  setHiZAll();
+  Serial.println("TK19 drive-low scan");
+  Serial.println("Example: short: A-B means A is shorted to B");
 }
 
 void loop() {
-  // Read tilt status of three directions
-  // When B/C/D pins read LOW, it means tilt detected in corresponding direction
-  int bState = digitalRead(B_PIN);   // Read B pin: LOW(0) = direction B tilt, HIGH(1) = no tilt
-  int cState = digitalRead(C_PIN);   // Read C pin: LOW(0) = direction C tilt, HIGH(1) = no tilt
-  int dState = digitalRead(D_PIN);   // Read D pin: LOW(0) = direction D tilt, HIGH(1) = no tilt
-  
-  // Detect and output tilt direction
-  bool tilted = false;  // Flag to mark if tilt is detected
-  
-  if (bState == LOW) {
-    Serial.println("Detected: Direction B tilt");
-    tilted = true;
+  bool any = false;
+
+  for (int i = 0; i < 4; i++) {
+    setHiZAll();
+    driveLow(i);
+    delay(2);
+
+    int j = findPulledLow(i);
+    if (j >= 0) {
+      any = true;
+      Serial.print("short: ");
+      Serial.print(N[i]);
+      Serial.print("-");
+      Serial.println(N[j]);
+    }
   }
-  
-  if (cState == LOW) {
-    Serial.println("Detected: Direction C tilt");
-    tilted = true;
-  }
-  
-  if (dState == LOW) {
-    Serial.println("Detected: Direction D tilt");
-    tilted = true;
-  }
-  
-  // If no direction is tilted, show level status
-  if (!tilted) {
-    Serial.println("Level");
-  }
-  
-  // Display all pin states (for debugging)
-  Serial.print("State: B=");
-  Serial.print(bState);
-  Serial.print("(LOW=tilt), C=");
-  Serial.print(cState);
-  Serial.print("(LOW=tilt), D=");
-  Serial.print(dState);
-  Serial.println("(LOW=tilt)");
-  
+
+  if (!any) Serial.println("Level (no short)");
   Serial.println("---");
-  
-  // Delay 100 milliseconds to avoid output too fast
   delay(100);
 }
 ```
@@ -92,50 +83,34 @@ void loop() {
 
 ## Code Walkthrough
 
-**Line 2–5: Pin definition**
+**Why “drive-low scan”?**
+
+- The module outputs are **active-low**.
+- The internal ball typically shorts a **pair** of contacts depending on tilt direction (often adjacent contacts; diagonals may not short).
+- Driving one line LOW and reading the others is the most reliable way to determine which pair is currently shorted.
+
+**Line 8–9: Configure wiring pins**
 
 ```cpp
-#define A_PIN 2      // Arduino digital pin connected to A (as common, output LOW)
-#define B_PIN 3      // Arduino digital pin connected to B (INPUT_PULLUP, detect direction B)
-#define C_PIN 4      // Arduino digital pin connected to C (INPUT_PULLUP, detect direction C)
-#define D_PIN 5      // Arduino digital pin connected to D (INPUT_PULLUP, detect direction D)
+const uint8_t PINS[4] = {2, 3, 4, 5};  // Order: A, B, C, D
+const char*   N[4]    = {"A", "B", "C", "D"};
 ```
 
-- **`A_PIN`:** The Arduino digital pin connected to A (as common, output LOW). Change this if you use another pin.
-- **`B_PIN`:** The Arduino digital pin connected to B (INPUT_PULLUP, detect direction B tilt). Change this if you use another pin.
-- **`C_PIN`:** The Arduino digital pin connected to C (INPUT_PULLUP, detect direction C tilt). Change this if you use another pin.
-- **`D_PIN`:** The Arduino digital pin connected to D (INPUT_PULLUP, detect direction D tilt). Change this if you use another pin.
+- **`PINS`:** Fill in the 4 Arduino digital pins you wired to A/B/C/D (keep the order A,B,C,D).
+- **`N`:** Names used for serial output.
 
-**Line 7–23: Initialization (setup function)**
+**Core logic**
 
 ```cpp
-void setup() {
-  // Start serial for debugging (9600 baud)
-  Serial.begin(9600);
-  
-  // Initialize pin modes
-  pinMode(A_PIN, OUTPUT);        // Set A pin as output (as common)
-  pinMode(B_PIN, INPUT_PULLUP);  // Set B pin as INPUT_PULLUP (detect direction B tilt)
-  pinMode(C_PIN, INPUT_PULLUP);  // Set C pin as INPUT_PULLUP (detect direction C tilt)
-  pinMode(D_PIN, INPUT_PULLUP);  // Set D pin as INPUT_PULLUP (detect direction D tilt)
-  
-  // Set A pin to LOW (as common/ground)
-  digitalWrite(A_PIN, LOW);
-  
-  Serial.println("4-direction tilt sensor program started");
-  Serial.println("Detecting tilt status in four directions");
-  Serial.println("A pin as common (LOW), B/C/D pins detect tilt (LOW=tilt)");
-}
+setHiZAll();   // Set all as INPUT_PULLUP (read)
+driveLow(i);   // Drive one line LOW (source)
 ```
 
-- **`setup()`:** Runs once when the Arduino starts.
-- **`Serial.begin(9600)`:** Start serial at 9600 baud.
-- **`pinMode(A_PIN, OUTPUT)`:** Set A pin as output (as common).
-- **`pinMode(B_PIN, INPUT_PULLUP)`:** Set B pin as INPUT_PULLUP (detect direction B tilt).
-- **`pinMode(C_PIN, INPUT_PULLUP)`:** Set C pin as INPUT_PULLUP (detect direction C tilt).
-- **`pinMode(D_PIN, INPUT_PULLUP)`:** Set D pin as INPUT_PULLUP (detect direction D tilt).
-- **`digitalWrite(A_PIN, LOW)`:** Set A pin to LOW (as common/ground) for tilt detection.
-- **`Serial.println(...)`:** Print program start message and instructions to Serial Monitor.
+To map directions:
+
+1. Upload the program and open Serial Monitor (9600).
+2. Tilt the module toward your own “up / down / left / right” definition.
+3. Record the stable `short: X-Y` outputs and build your mapping table.
 
 **Line 25–68: Main loop (loop function)**
 

@@ -10,69 +10,62 @@ This example shows how to use the TK19-4-DIRECTIONs TIL SENSOR module on a Raspb
 
 - **VCC** → Raspberry Pi Pico 2 3.3V or 5V
 - **GND** → Raspberry Pi Pico 2 GND
-- **A** → Raspberry Pi Pico 2 GPIO 0 (or the pin you set as `A_PIN` in code)
-- **B** → Raspberry Pi Pico 2 GPIO 1 (or the pin you set as `B_PIN` in code)
-- **C** → Raspberry Pi Pico 2 GPIO 2 (or the pin you set as `C_PIN` in code)
-- **D** → Raspberry Pi Pico 2 GPIO 3 (or the pin you set as `D_PIN` in code)
+- **A / B / C / D** → Any 4 GPIO pins on Pico 2 (e.g. GPIO 0–3)
+ 
+> Wire A/B/C/D according to the silkscreen labels.
 
 ## Code
 
 ```python
-# Import required modules
-from machine import Pin  # GPIO control
-import time              # For delay (time.sleep)
+# Drive-low scan (recommended)
+# Idea: Drive ONE of A/B/C/D LOW (output), read the other three as inputs with pull-ups.
+# If the internal ball shorts two contacts, the partner input will read LOW (0).
 
-# Pin number: change these to match your wiring
-A_PIN = 0      # GPIO connected to A (as common, output LOW)
-B_PIN = 1      # GPIO connected to B (INPUT_PULLUP, detect direction B)
-C_PIN = 2      # GPIO connected to C (INPUT_PULLUP, detect direction C)
-D_PIN = 3      # GPIO connected to D (INPUT_PULLUP, detect direction D)
+from machine import Pin
+import time
 
-# Create pin objects
-a = Pin(A_PIN, Pin.OUT)              # Set A pin as output (as common)
-b = Pin(B_PIN, Pin.IN, Pin.PULL_UP)  # Set B pin as INPUT_PULLUP (detect direction B tilt)
-c = Pin(C_PIN, Pin.IN, Pin.PULL_UP)  # Set C pin as INPUT_PULLUP (detect direction C tilt)
-d = Pin(D_PIN, Pin.IN, Pin.PULL_UP)  # Set D pin as INPUT_PULLUP (detect direction D tilt)
+# Update these to match your wiring (order MUST be A,B,C,D)
+PINS = [0, 1, 2, 3]
+NAMES = ["A", "B", "C", "D"]
 
-# Set A pin to LOW (as common/ground)
-a.off()  # Output LOW
+def set_hiz_all():
+    for p in PINS:
+        Pin(p, Pin.IN, Pin.PULL_UP)
 
-print("4-direction tilt sensor program started")
-print("Detecting tilt status in four directions")
-print("A pin as common (LOW), B/C/D pins detect tilt (0=tilt)")
+def drive_low(idx):
+    out = Pin(PINS[idx], Pin.OUT)
+    out.value(0)
+    return out  # keep reference
 
-# Main loop: runs forever
+def find_pulled_low(drive_idx):
+    for j in range(4):
+        if j == drive_idx:
+            continue
+        v = Pin(PINS[j], Pin.IN, Pin.PULL_UP).value()
+        if v == 0:
+            return j
+    return -1
+
+print("TK19 drive-low scan")
+print("Example: short: A-B means A is shorted to B")
+
 while True:
-    # Read tilt status of three directions
-    # When B/C/D pins read 0 (LOW), it means tilt detected in corresponding direction
-    b_state = b.value()   # Read B pin: 0 = direction B tilt (LOW), 1 = no tilt (HIGH)
-    c_state = c.value()   # Read C pin: 0 = direction C tilt (LOW), 1 = no tilt (HIGH)
-    d_state = d.value()   # Read D pin: 0 = direction D tilt (LOW), 1 = no tilt (HIGH)
-    
-    # Detect and output tilt direction
-    tilted = False  # Flag to mark if tilt is detected
-    
-    if b_state == 0:
-        print("Detected: Direction B tilt")
-        tilted = True
-    
-    if c_state == 0:
-        print("Detected: Direction C tilt")
-        tilted = True
-    
-    if d_state == 0:
-        print("Detected: Direction D tilt")
-        tilted = True
-    
-    # If no direction is tilted, show level status
-    if not tilted:
-        print("Level")
-    
-    # Display all pin states (for debugging)
-    print(f"State: B={b_state}(0=tilt), C={c_state}(0=tilt), D={d_state}(0=tilt)")
+    any_short = False
+
+    for i in range(4):
+        set_hiz_all()
+        _keep = drive_low(i)
+        time.sleep_ms(2)
+
+        j = find_pulled_low(i)
+        if j >= 0:
+            any_short = True
+            print("short: {}-{}".format(NAMES[i], NAMES[j]))
+
+    if not any_short:
+        print("Level (no short)")
+
     print("---")
-    
-    # Delay 100 milliseconds to avoid output too fast
     time.sleep_ms(100)
 ```
 
@@ -82,6 +75,12 @@ while True:
 
 
 ## Code Walkthrough
+
+**Why “drive-low scan”?**
+
+- Outputs are active-low.
+- The internal ball shorts a pair of contacts depending on tilt direction (often adjacent contacts; diagonals may not short).
+- Driving one line LOW and reading the others is the most reliable way to determine which pair is currently shorted.
 
 **Lines 1–2: Imports**
 
@@ -93,37 +92,22 @@ import time              # For delay (time.sleep)
 - **`machine.Pin`:** Used to control Pico GPIO pins.
 - **`time`:** Provides `sleep_ms()` and other time-related functions.
 
-**Lines 5–8: Pin definition**
+**Pin config**
 
 ```python
-A_PIN = 0      # GPIO connected to A (as common, output LOW)
-B_PIN = 1      # GPIO connected to B (INPUT_PULLUP, detect direction B)
-C_PIN = 2      # GPIO connected to C (INPUT_PULLUP, detect direction C)
-D_PIN = 3      # GPIO connected to D (INPUT_PULLUP, detect direction D)
+PINS = [0, 1, 2, 3]      # order: A,B,C,D
+NAMES = ["A", "B", "C", "D"]
 ```
 
-- **`A_PIN = 0`:** GPIO number for A pin, as common output LOW. Change this if you use another pin.
-- **`B_PIN = 1`、`C_PIN = 2`、`D_PIN = 3`:** GPIO numbers for B/C/D pins, used to detect tilt. Change these if you use other pins.
+- **`PINS`:** The 4 GPIO pins wired to A/B/C/D (keep the order A,B,C,D).
+- **`NAMES`:** Labels used for printing.
 
-**Lines 11–14: Create pin objects**
+**Core logic**
 
 ```python
-a = Pin(A_PIN, Pin.OUT)              # Set A pin as output (as common)
-b = Pin(B_PIN, Pin.IN, Pin.PULL_UP)  # Set B pin as INPUT_PULLUP (detect direction B tilt)
-c = Pin(C_PIN, Pin.IN, Pin.PULL_UP)  # Set C pin as INPUT_PULLUP (detect direction C tilt)
-d = Pin(D_PIN, Pin.IN, Pin.PULL_UP)  # Set D pin as INPUT_PULLUP (detect direction D tilt)
+set_hiz_all()        # all inputs with pull-ups
+_keep = drive_low(i) # drive one line LOW
 ```
-
-- **`Pin(A_PIN, Pin.OUT)`:** Set A pin as output, as common.
-- **`Pin(B_PIN, Pin.IN, Pin.PULL_UP)`:** Set B/C/D pins as INPUT_PULLUP, used to detect tilt.
-
-**Line 17: Set common pin**
-
-```python
-a.off()  # Output LOW
-```
-
-- **`a.off()`:** Output LOW from A pin, as common/ground.
 
 **Lines 20–22: Print start message**
 
