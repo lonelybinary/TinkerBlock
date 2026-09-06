@@ -10,7 +10,7 @@
 - **TK04 Button:** VCC → 5V, GND → GND, SIGNAL → D2  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![Multiple sensors wiring diagram](images/wiring_diagram-1.png)
+![Multiple sensors wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 

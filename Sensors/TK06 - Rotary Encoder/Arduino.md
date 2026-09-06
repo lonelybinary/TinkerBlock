@@ -6,7 +6,7 @@ This example shows how to use the TK06 - ROTARY ENCODER module on an Arduino Uno
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -107,7 +107,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK06-uno.gif)
+![Effect](images/TK06-uno.webp)
 
 
 ## Code Walkthrough

@@ -1,5 +1,5 @@
 
-![](images/Pasted%20image%2020260206134132.png)
+![](images/Pasted%20image%2020260206134132.webp)
 
 Experience premium quality with the Gold Edition Immersion Gold 46-Piece Sensor and Module Kit – where real gold meets cutting-edge electronics. This elite collection features 46 high-precision sensors, actuators, displays, and modules, all enhanced with genuine immersion gold (ENIG) plating technology.
 

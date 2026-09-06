@@ -4,7 +4,7 @@ This module is a magnetic Hall sensor module that can detect magnetic field stre
 
 # Appearance
 
-| ![Front](images/TK18-F.png) | ![Back](images/TK18-B.png) | ![Side](images/TK18-S.png) |
+| ![Front](images/TK18-F.webp) | ![Back](images/TK18-B.webp) | ![Side](images/TK18-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

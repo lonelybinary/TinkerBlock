@@ -4,7 +4,7 @@ This module is an LM75 temperature sensor module that can measure ambient temper
 
 # Appearance
 
-| ![Front](images/TK42-F.png) | ![Back](images/TK42-B.png) | ![Side](images/TK42-S.png) |
+| ![Front](images/TK42-F.webp) | ![Back](images/TK42-B.webp) | ![Side](images/TK42-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

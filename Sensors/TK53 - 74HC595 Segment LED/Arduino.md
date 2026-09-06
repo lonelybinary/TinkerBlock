@@ -6,7 +6,7 @@ This example shows how to use the TK53 - 74HC595 DIGIT DISPLAY module on an Ardu
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **GND** → Arduino Uno R3 GND
 - **NC** → Leave unconnected
@@ -73,7 +73,7 @@ void displayDigit(int digit) {
 
 ## Effect
 
-![Effect](images/TK53-uno.gif)
+![Effect](images/TK53-uno.webp)
 
 
 ## Code Walkthrough

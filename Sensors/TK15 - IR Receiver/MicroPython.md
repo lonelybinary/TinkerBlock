@@ -6,7 +6,7 @@ This example shows how to use the TK15 - IR RECEIVER module on a Raspberry Pi Pi
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -43,7 +43,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK15-pico.gif)
+![Effect](images/TK15-pico.webp)
 
 
 ## Code Walkthrough

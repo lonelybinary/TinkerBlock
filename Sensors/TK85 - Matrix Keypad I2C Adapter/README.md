@@ -10,11 +10,11 @@ A matrix keypad is a grid of buttons (like on a phone or calculator) that saves 
 
 It's like a crossword puzzle: rows and columns intersect at keys, and scanning finds the "word" (pressed key). For projects, plug it in and use simple code to read inputs!
 
-![Matrix keypad diagram](images/Pasted%20image%2020260206114533.png)
+![Matrix keypad diagram](images/Pasted%20image%2020260206114533.webp)
 
-![Matrix keypad diagram](images/Pasted%20image%2020260206114639.png)
+![Matrix keypad diagram](images/Pasted%20image%2020260206114639.webp)
 
-![Matrix keypad diagram](images/Pasted%20image%2020260206114651.png)
+![Matrix keypad diagram](images/Pasted%20image%2020260206114651.webp)
 
 # Lonely Binary Matrix Keypad I2C Adapter
 
@@ -26,7 +26,7 @@ You can also change the I2C address by shorting the A0, A1, and/or A2 pads on th
 
 # Appearance
 
-| ![Front](images/TK85-F.png) | ![Back](images/TK85-B.png) | ![Side](images/TK85-S.png) |
+| ![Front](images/TK85-F.webp) | ![Back](images/TK85-B.webp) | ![Side](images/TK85-S.webp) |
 | :------------------------: | :------------------------: | :------------------------: |
 | **Front** | **Back** | **Side** |
 

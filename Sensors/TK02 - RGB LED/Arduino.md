@@ -6,7 +6,7 @@ This example shows how to use the RGB LED module on an Arduino Uno R3 to create 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **GND** → Arduino Uno R3 GND
 - **RED** → Arduino Uno R3 D3
@@ -65,7 +65,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK02-uno.gif)
+![Effect](images/TK02-uno.webp)
 
 
 ## Code Walkthrough

@@ -6,7 +6,7 @@ This example shows how to use the TK05 - LOCK BUTTON module on a Raspberry Pi Pi
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 - **VCC** → Raspberry Pi Pico 2 3.3V or 5V
 - **GND** → Raspberry Pi Pico 2 GND
@@ -63,7 +63,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK05-pico.gif)
+![Effect](images/TK05-pico.webp)
 
 
 ## Code Walkthrough

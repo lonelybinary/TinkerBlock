@@ -4,7 +4,7 @@ This module is a latching button switch. Once pressed, it remains locked until p
 
 # Appearance
 
-| ![Front](images/TK05-F.png) | ![Back](images/TK05-B.png) | ![Side](images/TK05-S.png) |
+| ![Front](images/TK05-F.webp) | ![Back](images/TK05-B.webp) | ![Side](images/TK05-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

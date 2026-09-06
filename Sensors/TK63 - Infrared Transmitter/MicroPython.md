@@ -6,7 +6,7 @@ This example shows how to use the TK63 - INFRARED TRANSMITTER module on a Raspbe
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -43,7 +43,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK63-pico.gif)
+![Effect](images/TK63-pico.webp)
 
 
 ## Code Walkthrough

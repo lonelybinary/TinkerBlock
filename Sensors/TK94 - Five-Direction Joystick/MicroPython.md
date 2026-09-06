@@ -6,7 +6,7 @@ This example shows how to use the TK94 - FIVE-DIRECTION JOYSTICK module on a Ras
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -60,7 +60,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK94-pico.jpg)
+![Effect](images/TK94-pico.webp)
 
 
 ## Code Walkthrough

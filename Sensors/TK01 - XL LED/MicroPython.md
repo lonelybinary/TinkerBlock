@@ -6,7 +6,7 @@ This example shows how to blink the TK01-XL LED on a Raspberry Pi Pico 2 and cov
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 - **GND** → Raspberry Pi Pico 2 GND
 - **SIGNAL** → Raspberry Pi Pico 2 GPIO 0 (or the pin you set as `LED_PIN` in code)
@@ -39,7 +39,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK01-pico.gif)
+![Effect](images/TK01-pico.webp)
 
 ## Code Walkthrough
 

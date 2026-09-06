@@ -6,7 +6,7 @@ This example shows how to use the TK37 - PASSIVE BUZZER module on a Raspberry Pi
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -44,7 +44,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK37-pico.gif)
+![Effect](images/TK37-pico.webp)
 
 
 ## Code Walkthrough

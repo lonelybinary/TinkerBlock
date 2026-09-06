@@ -4,7 +4,7 @@ This module is a piezoelectric ceramic sensor module that can detect pressure or
 
 # Appearance
 
-| ![Front](images/TK59-F.png) | ![Back](images/TK59-B.png) | ![Side](images/TK59-S.png) |
+| ![Front](images/TK59-F.webp) | ![Back](images/TK59-B.webp) | ![Side](images/TK59-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

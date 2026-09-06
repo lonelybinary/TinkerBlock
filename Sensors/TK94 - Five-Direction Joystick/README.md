@@ -4,7 +4,7 @@ This module is a five-direction joystick module that can detect four directions:
 
 # Appearance
 
-| ![Front](images/TK94-F.png) | ![Back](images/TK94-B.png) | ![Side](images/TK94-S.png) |
+| ![Front](images/TK94-F.webp) | ![Back](images/TK94-B.webp) | ![Side](images/TK94-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

@@ -4,7 +4,7 @@ This module is a rotary potentiometer module. By rotating the knob, you can adju
 
 # Appearance
 
-| ![Front](images/TK08-F.png) | ![Back](images/TK08-B.png) | ![Side](images/TK08-S.png) |
+| ![Front](images/TK08-F.webp) | ![Back](images/TK08-B.webp) | ![Side](images/TK08-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

@@ -26,7 +26,7 @@ Connect TK52 Matrix LED to Arduino:
 - **CS** → Arduino D2  
 - **NC** leave unconnected
 
-![TK52 wiring diagram](images/wiring_diagram-1.png)
+![TK52 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -115,7 +115,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![Matrix LED effect](images/TK52-uno.gif)
+![Matrix LED effect](images/TK52-uno.webp)
 
 **Note:** If your kit has TK53 74HC595 Segment LED, you can try it on your own.
 

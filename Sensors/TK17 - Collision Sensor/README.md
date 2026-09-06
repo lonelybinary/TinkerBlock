@@ -4,7 +4,7 @@ This module is a collision sensor module that can detect collisions or vibration
 
 # Appearance
 
-| ![Front](images/TK17-F.png) | ![Back](images/TK17-B.png) | ![Side](images/TK17-S.png) |
+| ![Front](images/TK17-F.webp) | ![Back](images/TK17-B.webp) | ![Side](images/TK17-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

@@ -6,7 +6,7 @@ This example shows how to use the TK85 - MATRIX KEYPAD I2C ADAPTER module on a R
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -123,7 +123,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK85-pico.jpg)
+![Effect](images/TK85-pico.webp)
 
 
 ## Code Walkthrough

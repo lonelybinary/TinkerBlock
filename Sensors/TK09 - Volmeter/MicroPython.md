@@ -6,7 +6,7 @@ This example shows how to use the TK09 - VOLMETER module on a Raspberry Pi Pico 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -43,7 +43,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK09-pico.jpg)
+![Effect](images/TK09-pico.webp)
 
 
 ## Code Walkthrough

@@ -9,7 +9,7 @@
 - **TK43 touch sensor:** VCC → 5V, GND → GND, SIGNAL → D2, NC leave unconnected  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![TK43 + LED wiring diagram](images/wiring_diagram-1.png)
+![TK43 + LED wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -82,7 +82,7 @@ void loop() {
 
 **Expected result:**
 
-![Touch sensor effect](images/TK43-uno.gif)
+![Touch sensor effect](images/TK43-uno.webp)
 
 Proceed to Lesson 10.
 

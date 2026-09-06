@@ -4,7 +4,7 @@ This module is a tilt sensor module that can detect the tilt state of the module
 
 # Appearance
 
-| ![Front](images/TK62-F.png) | ![Back](images/TK62-B.png) | ![Side](images/TK62-S.png) |
+| ![Front](images/TK62-F.webp) | ![Back](images/TK62-B.webp) | ![Side](images/TK62-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

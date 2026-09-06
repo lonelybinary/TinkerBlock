@@ -6,7 +6,7 @@ This example shows how to use the TK64 - INRARED RECEIVER module on a Raspberry 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -49,7 +49,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK64-pico.gif)
+![Effect](images/TK64-pico.webp)
 
 
 ## Code Walkthrough

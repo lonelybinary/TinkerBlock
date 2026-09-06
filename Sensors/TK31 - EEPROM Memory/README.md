@@ -4,7 +4,7 @@ This module is an EEPROM module that can store data, and the data will not be lo
 
 # Appearance
 
-| ![Front](images/TK31-F.png) | ![Back](images/TK31-B.png) | ![Side](images/TK31-S.png) |
+| ![Front](images/TK31-F.webp) | ![Back](images/TK31-B.webp) | ![Side](images/TK31-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

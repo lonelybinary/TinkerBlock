@@ -6,7 +6,7 @@ This example shows how to use the TK17 - COLLISION SENSOR module on a Raspberry 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -43,7 +43,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK17-pico.gif)
+![Effect](images/TK17-pico.webp)
 
 
 ## Code Walkthrough

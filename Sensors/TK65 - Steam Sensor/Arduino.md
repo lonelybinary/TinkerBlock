@@ -6,7 +6,7 @@ This example shows how to use the TK65 - STEAM SENSOR module on an Arduino Uno R
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -67,7 +67,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK65-uno.jpg)
+![Effect](images/TK65-uno.webp)
 
 
 ## Code Walkthrough

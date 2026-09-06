@@ -6,7 +6,7 @@ This example shows how to use the TK65 - STEAM SENSOR module on a Raspberry Pi P
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -56,7 +56,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK65-pico.jpg)
+![Effect](images/TK65-pico.webp)
 
 
 ## Code Walkthrough

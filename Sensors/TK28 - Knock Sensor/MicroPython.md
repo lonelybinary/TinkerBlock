@@ -6,7 +6,7 @@ This example shows how to use the TK28 - TAP SENSOR module on a Raspberry Pi Pic
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -47,7 +47,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK28-pico.gif)
+![Effect](images/TK28-pico.webp)
 
 
 ## Code Walkthrough

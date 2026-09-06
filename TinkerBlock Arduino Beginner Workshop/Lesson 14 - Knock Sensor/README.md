@@ -9,7 +9,7 @@
 - **TK28 Knock Sensor:** VCC → 5V, GND → GND, SIGNAL → D2, NC leave unconnected  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![TK28 + LED wiring diagram](images/wiring_diagram-1.png)
+![TK28 + LED wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -81,7 +81,7 @@ void loop() {
 
 **Expected result:**
 
-![Knock sensor effect](images/TK28-uno.gif)
+![Knock sensor effect](images/TK28-uno.webp)
 
 Proceed to Lesson 15.
 

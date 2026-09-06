@@ -4,7 +4,7 @@ This module is a vibration motor module that can control motor vibration through
 
 # Appearance
 
-| ![Front](images/TK30-F.png) | ![Back](images/TK30-B.png) | ![Side](images/TK30-S.png) |
+| ![Front](images/TK30-F.webp) | ![Back](images/TK30-B.webp) | ![Side](images/TK30-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

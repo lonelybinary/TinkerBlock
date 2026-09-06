@@ -6,7 +6,7 @@ This example shows how to blink the TK01-XL LED on an Arduino Uno R3 and covers 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **GND** → Arduino Uno R3 GND
 - **SIGNAL** → Arduino Uno R3 D13 (or the digital pin you set as `LED_PIN` in code)
@@ -40,7 +40,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK01-uno.gif)
+![Effect](images/TK01-uno.webp)
 
 ## Code Walkthrough
 

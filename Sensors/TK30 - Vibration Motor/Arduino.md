@@ -6,7 +6,7 @@ This example shows how to use the TK30 - VIBRATION MOTOR module on an Arduino Un
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -44,7 +44,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK30-uno.gif)
+![Effect](images/TK30-uno.webp)
 
 
 ## Code Walkthrough

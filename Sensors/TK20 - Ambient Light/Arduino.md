@@ -6,7 +6,7 @@ This example shows how to use the TK20 - AMBIENT LIGHT module on an Arduino Uno 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -54,9 +54,9 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK20-uno.jpg)
+![Effect](images/TK20-uno.webp)
 
-![Effect](images/TK20-uno1.jpg)
+![Effect](images/TK20-uno1.webp)
 
 
 ## Code Walkthrough

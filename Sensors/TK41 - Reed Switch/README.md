@@ -4,7 +4,7 @@ This module is a magnetic switch module that can detect magnetic fields. When a 
 
 # Appearance
 
-| ![Front](images/TK41-F.png) | ![Back](images/TK41-B.png) | ![Side](images/TK41-S.png) |
+| ![Front](images/TK41-F.webp) | ![Back](images/TK41-B.webp) | ![Side](images/TK41-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

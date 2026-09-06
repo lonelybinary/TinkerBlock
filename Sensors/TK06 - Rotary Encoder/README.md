@@ -4,7 +4,7 @@ This module is a rotary encoder module that can detect rotation direction and ro
 
 # Appearance
 
-| ![Front](images/TK06-F.png) | ![Back](images/TK06-B.png) | ![Side](images/TK06-S.png) |
+| ![Front](images/TK06-F.webp) | ![Back](images/TK06-B.webp) | ![Side](images/TK06-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

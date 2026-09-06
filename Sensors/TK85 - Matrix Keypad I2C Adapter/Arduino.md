@@ -6,7 +6,7 @@ This example shows how to use the TK85 - MATRIX KEYPAD I2C ADAPTER module on an 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -77,7 +77,7 @@ void loop()
 }
 ```
 
-![I2C scan sample](images/Pasted%20image%2020260206114957.png)
+![I2C scan sample](images/Pasted%20image%2020260206114957.webp)
 ## Sample Code
 
 #### Option 1: Using Arduino Library Manager (Easiest)
@@ -156,9 +156,9 @@ void loop()
 
 ## Effect
 
-![Effect](images/TK85-uno.jpg)
+![Effect](images/TK85-uno.webp)
 
-![Keypad effect](images/Pasted%20image%2020260206115147.png)
+![Keypad effect](images/Pasted%20image%2020260206115147.webp)
 
 
 ## Code Walkthrough

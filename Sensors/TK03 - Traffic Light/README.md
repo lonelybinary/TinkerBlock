@@ -4,7 +4,7 @@ This module is a traffic light module that contains three LEDs: red, yellow, and
 
 # Appearance
 
-| ![Front](images/TK03-F.png) | ![Back](images/TK03-B.png) | ![Side](images/TK03-S.png) |
+| ![Front](images/TK03-F.webp) | ![Back](images/TK03-B.webp) | ![Side](images/TK03-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

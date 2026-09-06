@@ -4,7 +4,7 @@ This module is a tap sensor module that can detect taps or vibrations. When the 
 
 # Appearance
 
-| ![Front](images/TK28-F.png) | ![Back](images/TK28-B.png) | ![Side](images/TK28-S.png) |
+| ![Front](images/TK28-F.webp) | ![Back](images/TK28-B.webp) | ![Side](images/TK28-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

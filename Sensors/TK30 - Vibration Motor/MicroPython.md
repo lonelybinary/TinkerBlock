@@ -6,7 +6,7 @@ This example shows how to use the TK30 - VIBRATION MOTOR module on a Raspberry P
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -38,7 +38,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK30-pico.gif)
+![Effect](images/TK30-pico.webp)
 
 
 ## Code Walkthrough

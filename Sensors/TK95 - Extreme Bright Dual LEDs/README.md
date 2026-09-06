@@ -4,7 +4,7 @@ This module is an extreme bright dual-color LED module containing two LEDs: 3000
 
 # Appearance
 
-| ![Front](images/TK95-F.png) | ![Back](images/TK95-B.png) | ![Side](images/TK95-S.png) |
+| ![Front](images/TK95-F.webp) | ![Back](images/TK95-B.webp) | ![Side](images/TK95-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

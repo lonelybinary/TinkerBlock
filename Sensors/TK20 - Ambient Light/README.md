@@ -4,7 +4,7 @@ This module is an ambient light sensor module that can measure ambient light int
 
 # Appearance
 
-| ![Front](images/TK20-F.png) | ![Back](images/TK20-B.png) | ![Side](images/TK20-S.png) |
+| ![Front](images/TK20-F.webp) | ![Back](images/TK20-B.webp) | ![Side](images/TK20-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

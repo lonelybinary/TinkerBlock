@@ -13,7 +13,7 @@ Connect TK37 Passive Buzzer to Arduino:
 - **SIGNAL** → Arduino D3  
 - **NC** leave unconnected
 
-![TK37 wiring diagram](images/wiring_diagram-1.png)
+![TK37 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -92,7 +92,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![Passive buzzer effect](images/TK37-uno.gif)
+![Passive buzzer effect](images/TK37-uno.webp)
 
 Proceed to Lesson 18.
 

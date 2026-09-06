@@ -4,7 +4,7 @@ This module is a single-digit 7-segment display using 74HC595 shift register dri
 
 # Appearance
 
-| ![Front](images/TK53-F.png) | ![Back](images/TK53-B.png) | ![Side](images/TK53-S.png) |
+| ![Front](images/TK53-F.webp) | ![Back](images/TK53-B.webp) | ![Side](images/TK53-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

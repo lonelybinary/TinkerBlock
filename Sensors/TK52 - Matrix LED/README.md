@@ -4,7 +4,7 @@ This module is a 64×64 pixel matrix LED display that can display text, patterns
 
 # Appearance
 
-| ![Front](images/TK52-F.png) | ![Back](images/TK52-B.png) | ![Side](images/TK52-S.png) |
+| ![Front](images/TK52-F.webp) | ![Back](images/TK52-B.webp) | ![Side](images/TK52-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

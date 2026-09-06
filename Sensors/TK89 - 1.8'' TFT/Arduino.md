@@ -6,7 +6,7 @@ This example shows how to use the TK89 - 1.8INCH TFT ST7735 module on an Arduino
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 ⚠️ **Important Warning:** Arduino Uno R3 is a 5V MCU, while this TFT screen module's signal pins are 3.3V level. Must use TK97 logic level converter module for level conversion, otherwise the screen may be damaged!
 
@@ -281,7 +281,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK89-uno.gif)
+![Effect](images/TK89-uno.webp)
 
 
 ## Code Walkthrough

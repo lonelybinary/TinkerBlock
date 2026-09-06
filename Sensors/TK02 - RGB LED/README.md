@@ -4,7 +4,7 @@ This module is an RGB LED module that combines red, green, and blue LEDs. By con
 
 # Appearance
 
-| ![Front](images/TK02-F.png) | ![Back](images/TK02-B.png) | ![Side](images/TK02-S.png) |
+| ![Front](images/TK02-F.webp) | ![Back](images/TK02-B.webp) | ![Side](images/TK02-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

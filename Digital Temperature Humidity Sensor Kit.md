@@ -1,5 +1,5 @@
 
-![](images/20260206-1.png)
+![](images/20260206-1.webp)
 
 The bundle includes three DHT22 modules for high-accuracy measurements in challenging environments, three DHT11 modules for everyday basic monitoring, and a handy storage container to keep everything organized and protected from dust or damage.
 

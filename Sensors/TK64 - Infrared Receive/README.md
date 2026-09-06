@@ -4,7 +4,7 @@ This module is an infrared receiver module that can receive infrared remote cont
 
 # Appearance
 
-| ![Front](images/TK64-F.png) | ![Back](images/TK64-B.png) | ![Side](images/TK64-S.png) |
+| ![Front](images/TK64-F.webp) | ![Back](images/TK64-B.webp) | ![Side](images/TK64-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

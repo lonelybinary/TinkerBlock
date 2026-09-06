@@ -12,7 +12,7 @@ Connect TK09 Voltmeter to Arduino:
 - **SIG** → Arduino A0  
 - **NC** leave unconnected
 
-![TK09 wiring diagram](images/wiring_diagram-1.png)
+![TK09 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -83,7 +83,7 @@ void loop() {
 
 **Expected result:**
 
-![Voltmeter serial output](images/TK09-uno.jpg)
+![Voltmeter serial output](images/TK09-uno.webp)
 
 Serial monitor:
 ```

@@ -6,7 +6,7 @@ This example shows how to use the TK41 - MAGNETIC SWITCH module on a Raspberry P
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -47,7 +47,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK41-pico.gif)
+![Effect](images/TK41-pico.webp)
 
 
 ## Code Walkthrough

@@ -4,7 +4,7 @@ This module is a mechanical key + LED module containing a mechanical key and a W
 
 # Appearance
 
-| ![Front](images/TK96-F.png) | ![Back](images/TK96-B.png) | ![Side](images/TK96-S.png) |
+| ![Front](images/TK96-F.webp) | ![Back](images/TK96-B.webp) | ![Side](images/TK96-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

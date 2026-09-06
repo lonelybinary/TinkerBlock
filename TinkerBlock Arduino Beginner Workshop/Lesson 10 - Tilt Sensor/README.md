@@ -9,7 +9,7 @@
 - **TK62 tilt sensor:** VCC → 5V, GND → GND, SIGNAL → D2, NC leave unconnected  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![TK62 + LED wiring diagram](images/wiring_diagram-1.png)
+![TK62 + LED wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -82,7 +82,7 @@ void loop() {
 
 **Expected result:**
 
-![Tilt sensor effect](images/TK62-uno.gif)
+![Tilt sensor effect](images/TK62-uno.webp)
 
 **Note:** If your kit has the TK19 4-Directions Tilt Sensor, you can try it; it can detect tilt in four directions (up, down, left, right).
 

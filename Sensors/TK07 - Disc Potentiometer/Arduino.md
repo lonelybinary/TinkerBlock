@@ -6,7 +6,7 @@ This example shows how to use the TK07 - DIS POTENTIOMETER module on an Arduino 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -60,7 +60,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK07-uno.gif)
+![Effect](images/TK07-uno.webp)
 
 
 ## Code Walkthrough

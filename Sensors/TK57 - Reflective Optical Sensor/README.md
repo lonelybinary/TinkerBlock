@@ -4,7 +4,7 @@ This module is a line tracker sensor module that can detect black or white lines
 
 # Appearance
 
-| ![Front](images/TK57-F.png) | ![Back](images/TK57-B.png) | ![Side](images/TK57-S.png) |
+| ![Front](images/TK57-F.webp) | ![Back](images/TK57-B.webp) | ![Side](images/TK57-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

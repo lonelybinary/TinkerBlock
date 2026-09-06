@@ -4,7 +4,7 @@ This module is a WS2812 RGB LED module that can control 5 LED beads to display a
 
 # Appearance
 
-| ![Front](images/TK33-F.png) | ![Back](images/TK33-B.png) | ![Side](images/TK33-S.png) |
+| ![Front](images/TK33-F.webp) | ![Back](images/TK33-B.webp) | ![Side](images/TK33-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

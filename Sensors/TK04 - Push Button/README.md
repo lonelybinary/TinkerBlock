@@ -4,7 +4,7 @@ This module is a push button module that can detect whether the button is presse
 
 # Appearance
 
-| ![Front](images/TK04-F.png) | ![Back](images/TK04-B.png) | ![Side](images/TK04-S.png) |
+| ![Front](images/TK04-F.webp) | ![Back](images/TK04-B.webp) | ![Side](images/TK04-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

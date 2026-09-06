@@ -4,7 +4,7 @@ This module is a photoelectric switch module that can detect whether an object b
 
 # Appearance
 
-| ![Front](images/TK61-F.png) | ![Back](images/TK61-B.png) | ![Side](images/TK61-S.png) |
+| ![Front](images/TK61-F.webp) | ![Back](images/TK61-B.webp) | ![Side](images/TK61-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

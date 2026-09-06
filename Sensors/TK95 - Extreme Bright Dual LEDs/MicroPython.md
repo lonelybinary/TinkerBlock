@@ -6,7 +6,7 @@ This example shows how to use the TK95 - EXTREME BRIGHT DUAL LEDS module on a Ra
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -50,7 +50,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK95-pico.gif)
+![Effect](images/TK95-pico.webp)
 
 
 ## Code Walkthrough

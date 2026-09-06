@@ -6,7 +6,7 @@ This example shows how to use the TK20 - AMBIENT LIGHT module on a Raspberry Pi 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -46,9 +46,9 @@ while True:
 
 ## Effect
 
-![Effect](images/TK20-pico.jpg)
+![Effect](images/TK20-pico.webp)
 
-![Effect](images/TK20-pico1.jpg)
+![Effect](images/TK20-pico1.webp)
 
 
 ## Code Walkthrough

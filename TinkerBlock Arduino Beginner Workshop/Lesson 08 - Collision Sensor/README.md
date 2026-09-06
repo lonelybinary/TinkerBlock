@@ -9,7 +9,7 @@
 - **TK17 collision sensor:** VCC → 5V, GND → GND, SIGNAL → D2, NC leave unconnected  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![TK17 + LED wiring diagram](images/wiring_diagram-1.png)
+![TK17 + LED wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -83,7 +83,7 @@ void loop() {
 
 **Expected result:**
 
-![Collision sensor effect](images/TK17-uno.gif)
+![Collision sensor effect](images/TK17-uno.webp)
 
 **Note:** TK18 Hall Effect Sensor and TK41 Reed Switch work similarly (magnetic sensing); you can try them on your own.
 

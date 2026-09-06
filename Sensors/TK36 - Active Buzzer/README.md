@@ -4,7 +4,7 @@ This module is an active buzzer module that automatically emits a fixed frequenc
 
 # Appearance
 
-| ![Front](images/TK36-F.png) | ![Back](images/TK36-B.png) | ![Side](images/TK36-S.png) |
+| ![Front](images/TK36-F.webp) | ![Back](images/TK36-B.webp) | ![Side](images/TK36-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

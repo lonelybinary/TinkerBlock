@@ -23,7 +23,7 @@ You will learn the following in this guide:
 | SDA | SDA     |
 | SCL | SCL     |
 
-![](images/Pasted%20image%20251223190414.png)
+![](images/Pasted%20image%2020251223190414.webp)
 
 # LCD 2004
 
@@ -43,11 +43,11 @@ Before using LCD 2004, we have to run I2C scanner to get it's I2C address. The o
 • Go to **Sketch** > **Include Library** > **Manage Libraries…**
 • Search for **LiquidCrystal I2C** and install it.
 
-![](images/Pasted%20image%20260206122738.png)
+![](images/Pasted%20image%2020260206122738.webp)
 
 - Search for **“DHT ESP”** and install it.
 
-![](images/Pasted%20image%20260206122751.png)
+![](images/Pasted%20image%2020260206122751.webp)
 
 
 # Code

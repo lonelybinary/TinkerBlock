@@ -6,7 +6,7 @@ This example shows how to use the TK53 - 74HC595 DIGIT DISPLAY module on a Raspb
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -79,7 +79,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK53-pico.gif)
+![Effect](images/TK53-pico.webp)
 
 
 ## Code Walkthrough

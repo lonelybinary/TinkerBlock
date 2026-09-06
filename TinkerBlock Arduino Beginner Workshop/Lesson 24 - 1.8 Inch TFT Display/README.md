@@ -29,7 +29,7 @@ Connect TK89 1.8'' TFT to Arduino:
 
 **Note:** If your TK89 is **3.3V logic** and Arduino UNO R3 is 5V, use **TK97 Logic Level Converter** for level shifting to avoid damaging the display.
 
-![TK89 wiring diagram](images/wiring_diagram-1.png)
+![TK89 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -121,7 +121,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![TFT display effect](images/TK89-uno.gif)
+![TFT display effect](images/TK89-uno.webp)
 
 Proceed to Lesson 25.
 

@@ -6,7 +6,7 @@ This example shows how to use the TK94 - FIVE-DIRECTION JOYSTICK module on an Ar
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -62,7 +62,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK94-uno.jpg)
+![Effect](images/TK94-uno.webp)
 
 
 ## Code Walkthrough

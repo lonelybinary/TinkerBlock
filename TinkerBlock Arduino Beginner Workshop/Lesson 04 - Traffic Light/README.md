@@ -14,7 +14,7 @@ Connect TK03 Traffic Light to Arduino (three LEDs to D2, D3, D4; in code use **2
 - **GREEN** → Arduino D4  
 - **NC** — leave unconnected
 
-![TK03 wiring diagram](images/wiring_diagram-1.png)
+![TK03 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -99,7 +99,7 @@ void loop() {
 
 **Expected result:**
 
-![Traffic light effect](images/TK03-uno.gif)
+![Traffic light effect](images/TK03-uno.webp)
 
 Proceed to Lesson 05.
 

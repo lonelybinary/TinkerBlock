@@ -6,7 +6,7 @@ This example shows how to use the TK04 - PUSH BUTTON module on a Raspberry Pi Pi
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 - **VCC** → Raspberry Pi Pico 2 3.3V or 5V
 - **GND** → Raspberry Pi Pico 2 GND
@@ -49,7 +49,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK04-pico.gif)
+![Effect](images/TK04-pico.webp)
 
 
 ## Code Walkthrough

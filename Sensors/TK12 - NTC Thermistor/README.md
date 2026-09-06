@@ -4,7 +4,7 @@ This module is an NTC thermistor module that can measure ambient temperature. Th
 
 # Appearance
 
-| ![Front](images/TK12-F.png) | ![Back](images/TK12-B.png) | ![Side](images/TK12-S.png) |
+| ![Front](images/TK12-F.webp) | ![Back](images/TK12-B.webp) | ![Side](images/TK12-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

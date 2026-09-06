@@ -6,7 +6,7 @@ This example shows how to use the TK27 - ANALOG MIC SENSOR module on a Raspberry
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -46,7 +46,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK27-pico.jpg)
+![Effect](images/TK27-pico.webp)
 
 
 ## Code Walkthrough

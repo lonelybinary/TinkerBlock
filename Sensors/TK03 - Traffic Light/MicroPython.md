@@ -6,7 +6,7 @@ This example shows how to use the TK03 - TRAFFIC LIGHT module on a Raspberry Pi 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 - **GND** → Raspberry Pi Pico 2 GND
 - **RED** → Raspberry Pi Pico 2 GPIO 0 (or the pin you set as `RED_PIN` in code)
@@ -66,7 +66,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK03-pico.gif)
+![Effect](images/TK03-pico.webp)
 
 
 ## Code Walkthrough

@@ -4,7 +4,7 @@ This module is a passive buzzer module that can be controlled through programmin
 
 # Appearance
 
-| ![Front](images/TK37-F.png) | ![Back](images/TK37-B.png) | ![Side](images/TK37-S.png) |
+| ![Front](images/TK37-F.webp) | ![Back](images/TK37-B.webp) | ![Side](images/TK37-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

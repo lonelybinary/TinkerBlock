@@ -4,7 +4,7 @@ This module is a 4-direction tilt sensor module that can detect tilt status in f
 
 # Appearance
 
-| ![Front](images/TK19-F.png) | ![Back](images/TK19-B.png) | ![Side](images/TK19-S.png) |
+| ![Front](images/TK19-F.webp) | ![Back](images/TK19-B.webp) | ![Side](images/TK19-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

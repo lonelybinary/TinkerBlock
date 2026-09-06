@@ -4,7 +4,7 @@ This module is a linear Hall effect sensor module that can detect magnetic field
 
 # Appearance
 
-| ![Front](images/TK70-F.png) | ![Back](images/TK70-B.png) | ![Side](images/TK70-S.png) |
+| ![Front](images/TK70-F.webp) | ![Back](images/TK70-B.webp) | ![Side](images/TK70-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

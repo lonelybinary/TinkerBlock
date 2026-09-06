@@ -4,7 +4,7 @@ This module is a 4-digit 7-segment display module using TM1637 driver chip. Can 
 
 # Appearance
 
-| ![Front](images/TK51-F.png) | ![Back](images/TK51-B.png) | ![Side](images/TK51-S.png) |
+| ![Front](images/TK51-F.webp) | ![Back](images/TK51-B.webp) | ![Side](images/TK51-S.webp) |
 | :------------------------: | :------------------------: | :------------------------: |
 | **Front** | **Back** | **Side** |
 

@@ -4,7 +4,7 @@ This module is an infrared receiver module that can receive signals from infrare
 
 # Appearance
 
-| ![Front](images/TK15-F.png) | ![Back](images/TK15-B.png) | ![Side](images/TK15-S.png) |
+| ![Front](images/TK15-F.webp) | ![Back](images/TK15-B.webp) | ![Side](images/TK15-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

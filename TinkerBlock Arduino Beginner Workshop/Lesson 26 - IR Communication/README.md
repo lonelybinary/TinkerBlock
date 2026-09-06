@@ -26,7 +26,7 @@ This lesson uses **two UNO R3** boards: one with the **receiver** only, one with
 - **SIGNAL** → Arduino D3  
 - **NC** leave unconnected
 
-![TK15 IR receiver wiring](images/wiring_diagram-1.png)
+![TK15 IR receiver wiring](images/wiring_diagram-1.webp)
 
 ### Board B: IR sender (TK16)
 
@@ -35,7 +35,7 @@ This lesson uses **two UNO R3** boards: one with the **receiver** only, one with
 - **SIGNAL** → Arduino D3  
 - **NC** leave unconnected
 
-![TK16 IR sender wiring](images/wiring_diagram-2.png)
+![TK16 IR sender wiring](images/wiring_diagram-2.webp)
 
 ---
 
@@ -137,7 +137,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![IR communication effect](images/TK15-uno.gif)
+![IR communication effect](images/TK15-uno.webp)
 
 **Note:** TK64 IR Receiver and TK63 IR Sender work similarly; you can try them.
 

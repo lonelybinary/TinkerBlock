@@ -14,7 +14,7 @@ Connect TK85 Matrix Keypad I2C Adapter to Arduino (I2C):
 - **SCL** → Arduino A5 (I2C clock)  
 - **NC** leave unconnected
 
-![TK85 wiring diagram](images/wiring_diagram-1.png)
+![TK85 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -109,7 +109,7 @@ int readKeypad() {
 
 **Expected result:**
 
-![Matrix keypad serial output](images/TK85-uno.jpg)
+![Matrix keypad serial output](images/TK85-uno.webp)
 
 Serial monitor:
 ```

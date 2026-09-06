@@ -13,7 +13,7 @@ Connect TK95 Extreme Bright Dual LEDs to Arduino (each LED on a PWM pin):
 - **6500K** → Arduino D3 (PWM, cool white)  
 - **NC** leave unconnected
 
-![TK95 wiring diagram](images/wiring_diagram-1.png)
+![TK95 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -91,7 +91,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![Extreme bright dual LED effect](images/TK95-uno.gif)
+![Extreme bright dual LED effect](images/TK95-uno.webp)
 
 Proceed to Lesson 38.
 

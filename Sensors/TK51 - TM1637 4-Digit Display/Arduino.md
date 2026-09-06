@@ -15,7 +15,7 @@ Restart the Arduino IDE if needed. The library should now be available.
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -61,7 +61,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK51-uno.gif)
+![Effect](images/TK51-uno.webp)
 
 
 ## Code Walkthrough

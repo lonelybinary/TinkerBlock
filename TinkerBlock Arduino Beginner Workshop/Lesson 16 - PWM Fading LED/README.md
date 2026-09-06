@@ -12,7 +12,7 @@ Connect TK01 XL LED to Arduino (**must use a PWM pin**, e.g. D3, D5, D6, D9, D10
 - **SIGNAL** → Arduino D3 (PWM pin)  
 - **NC** leave unconnected
 
-![TK01 wiring diagram](images/wiring_diagram-1.png)
+![TK01 wiring diagram](images/wiring_diagram-1.webp)
 
 **Note:** `analogWrite()` only works on **PWM pins** (Arduino Uno: D3, D5, D6, D9, D10, D11, marked with ~).
 
@@ -106,7 +106,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![PWM breathing LED effect](images/pwm_led.gif)
+![PWM breathing LED effect](images/pwm_led.webp)
 
 Proceed to Lesson 17.
 

@@ -39,12 +39,12 @@ Here's a quick comparison:
 | **Lead-Free**    | ✓    | X       |     |
 # Schematic Diagram
 
-![](images/Pasted%20image%2020250527214858.png)
+![](images/Pasted%20image%2020250527214858.webp)
 # Mode Selection
 
 The TK50 sensor operates in **GPIO Mode** by default. To select a different interface, simply solder **Jumper 1** and **Jumper 2** according to the configurations in the table below. "Short" indicates that the jumper pads should be soldered to close the circuit.
 
-![](images/Pasted%20image%2020250527214057.png)
+![](images/Pasted%20image%2020250527214057.webp)
 
 |Mode|Jumper 1|Jumper 2|
 |:--|:--|:--|
@@ -63,7 +63,7 @@ The TK50 sensor operates in **GPIO Mode** by default. To select a different inte
 
 # Dimensions
 
-![](images/Pasted%20image%2020250527213824.png)
+![](images/Pasted%20image%2020250527213824.webp)
 
 # Sample Code
 
@@ -75,7 +75,7 @@ To get started, please install the necessary library from GitHub in your Arduino
 
 **GPIO is the sensor's default mode.** To use it, simply leave both Jumper 1 and Jumper 2 open.
 
-![](images/Pasted%20image%2020250527221459.png)
+![](images/Pasted%20image%2020250527221459.webp)
 
 ``` cpp
 #include <AlashUltrasonic.h>
@@ -104,7 +104,7 @@ void loop() {
 
 To activate **UART mode**, you should **leave Jumper 1 open and short Jumper 2**.
 
-![](images/Pasted%20image%2020250527221909.png)
+![](images/Pasted%20image%2020250527221909.webp)
 
 ``` cpp
 #include <AlashUltrasonic.h>
@@ -133,7 +133,7 @@ void loop() {
 
 To activate **I2C mode**, you should **short Jumper 1 and leave Jumper 2 open**.
 
-![](images/Pasted%20image%2020250527221932.png)
+![](images/Pasted%20image%2020250527221932.webp)
 
 ``` cpp
 #include <AlashUltrasonic.h>
@@ -159,7 +159,7 @@ void loop() {
 
 To activate **One-Wire mode**, simply **short both Jumper 1 and Jumper 2**.
 
-![](images/Pasted%20image%2020250527222005.png)
+![](images/Pasted%20image%2020250527222005.webp)
 
 ``` cpp
 #include <AlashUltrasonic.h>
@@ -186,7 +186,7 @@ void loop() {
 
 If you encounter any issues, please go to [https://lonelybinary.com ](https://lonelybinary.com ) and click the Support button located in the bottom right corner. Our team is ready to assist you.
 
-[![Technical Support](images/Pasted%20image%2020250527102623.png)](https://lonelybinary.com)
+[![Technical Support](images/Pasted%20image%2020250527102623.webp)](https://lonelybinary.com)
 
 # Thank You
 

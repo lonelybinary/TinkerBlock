@@ -6,7 +6,7 @@ This example shows how to use the TK51 - 4-DIGIT DISPLAY module on a Raspberry P
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -53,7 +53,7 @@ else:
 
 ## Effect
 
-![Effect](images/TK51-pico.gif)
+![Effect](images/TK51-pico.webp)
 
 
 ## Code Walkthrough

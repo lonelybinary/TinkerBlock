@@ -6,7 +6,7 @@ This example shows how to use the TK09 - VOLMETER module on an Arduino Uno R3 to
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **GND** → Arduino Uno R3 GND
 - **NC** → Leave unconnected
@@ -55,7 +55,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK09-uno.jpg)
+![Effect](images/TK09-uno.webp)
 
 
 ## Code Walkthrough

@@ -6,7 +6,7 @@ This example shows how to use the TK29 - ADC MODULE on an Arduino Uno R3 to read
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -49,7 +49,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK29-uno.jpg)
+![Effect](images/TK29-uno.webp)
 
 
 ## Code Walkthrough

@@ -4,7 +4,7 @@ This module is an analog-to-digital converter module (ADC module) that can conve
 
 # Appearance
 
-| ![Front](images/TK29-F.png) | ![Back](images/TK29-B.png) | ![Side](images/TK29-S.png) |
+| ![Front](images/TK29-F.webp) | ![Back](images/TK29-B.webp) | ![Side](images/TK29-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

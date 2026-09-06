@@ -6,7 +6,7 @@ This example shows how to use the TK12 - NTC THERMISTOR module on a Raspberry Pi
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 - **VCC** → Raspberry Pi Pico 2 3.3V or 5V
 - **GND** → Raspberry Pi Pico 2 GND
@@ -80,9 +80,9 @@ while True:
 
 ## Effect
 
-![Effect](images/TK12-pico.jpg)
+![Effect](images/TK12-pico.webp)
 
-![Effect](images/TK12-pico1.jpg)
+![Effect](images/TK12-pico1.webp)
 
 
 ## Code Walkthrough

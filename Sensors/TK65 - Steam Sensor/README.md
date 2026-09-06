@@ -4,7 +4,7 @@ This module is a steam sensor module that can detect water vapor or humidity in 
 
 # Appearance
 
-| ![Front](images/TK65-F.png) | ![Back](images/TK65-B.png) | ![Side](images/TK65-S.png) |
+| ![Front](images/TK65-F.webp) | ![Back](images/TK65-B.webp) | ![Side](images/TK65-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

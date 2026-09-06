@@ -6,7 +6,7 @@ This example shows how to use the TK61 - PHOTOELECTRIC SWITCH module on a Raspbe
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -47,7 +47,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK61-pico.gif)
+![Effect](images/TK61-pico.webp)
 
 
 ## Code Walkthrough

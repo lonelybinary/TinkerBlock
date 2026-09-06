@@ -14,7 +14,7 @@ Connect TK02 RGB LED to Arduino (three colors to D3, D5, D6; in code use **3, 5,
 - **BLUE** → Arduino D6  
 - **NC** — leave unconnected
 
-![TK02 wiring diagram](images/wiring_diagram-1.png)
+![TK02 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -104,7 +104,7 @@ void loop() {
 
 **Expected result:**
 
-![RGB LED effect](images/TK02-uno.gif)
+![RGB LED effect](images/TK02-uno.webp)
 
 Proceed to Lesson 07.
 

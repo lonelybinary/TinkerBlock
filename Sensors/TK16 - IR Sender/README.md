@@ -4,7 +4,7 @@ This module is an infrared remote transmitter module that can transmit infrared 
 
 # Appearance
 
-| ![Front](images/TK16-F.png) | ![Back](images/TK16-B.png) | ![Side](images/TK16-S.png) |
+| ![Front](images/TK16-F.webp) | ![Back](images/TK16-B.webp) | ![Side](images/TK16-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

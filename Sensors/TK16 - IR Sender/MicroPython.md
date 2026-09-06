@@ -6,7 +6,7 @@ This example shows how to use the TK16 - IR REMOTE SENSOR module on a Raspberry 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -42,7 +42,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK16-pico.gif)
+![Effect](images/TK16-pico.webp)
 
 
 ## Code Walkthrough

@@ -6,7 +6,7 @@ This example shows how to use the TK19-4-DIRECTIONs TIL SENSOR module on a Raspb
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 - **VCC** → Raspberry Pi Pico 2 3.3V or 5V
 - **GND** → Raspberry Pi Pico 2 GND
@@ -71,7 +71,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK19-pico.gif)
+![Effect](images/TK19-pico.webp)
 
 
 ## Code Walkthrough

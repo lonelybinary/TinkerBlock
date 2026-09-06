@@ -4,7 +4,7 @@ This module is a 1.8-inch color TFT LCD display using ST7735 driver chip. Can di
 
 # Appearance
 
-| ![Front](images/TK89-F.png) | ![Back](images/TK89-B.png) | ![Side](images/TK89-S.png) |
+| ![Front](images/TK89-F.webp) | ![Back](images/TK89-B.webp) | ![Side](images/TK89-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

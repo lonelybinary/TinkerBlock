@@ -4,7 +4,7 @@ This module is a potentiometer module that can adjust resistance value and outpu
 
 # Appearance
 
-| ![Front](images/TK07-F.png) | ![Back](images/TK07-B.png) | ![Side](images/TK07-S.png) |
+| ![Front](images/TK07-F.webp) | ![Back](images/TK07-B.webp) | ![Side](images/TK07-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

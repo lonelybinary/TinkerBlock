@@ -6,7 +6,7 @@ This example shows how to use the TK31 - EEPROM MODULE on a Raspberry Pi Pico 2 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -64,7 +64,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK31-pico.jpg)
+![Effect](images/TK31-pico.webp)
 
 
 ## Code Walkthrough

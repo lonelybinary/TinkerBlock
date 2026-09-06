@@ -4,7 +4,7 @@ This module is a logic level converter module that can perform bidirectional con
 
 # Appearance
 
-| ![Front](images/TK97-F.png) | ![Back](images/TK97-B.png) | ![Side](images/TK97-S.png) |
+| ![Front](images/TK97-F.webp) | ![Back](images/TK97-B.webp) | ![Side](images/TK97-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

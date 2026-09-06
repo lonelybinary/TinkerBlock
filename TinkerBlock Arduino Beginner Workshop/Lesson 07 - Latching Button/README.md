@@ -9,7 +9,7 @@
 - **TK05 latching button:** VCC → 5V, GND → GND, SIGNAL → D2, NC leave unconnected  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![TK05 + LED wiring diagram](images/wiring_diagram-1.png)
+![TK05 + LED wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -84,7 +84,7 @@ void loop() {
 
 **Expected result:**
 
-![Latching button effect](images/TK05-uno.gif)
+![Latching button effect](images/TK05-uno.webp)
 
 Proceed to Lesson 08.
 

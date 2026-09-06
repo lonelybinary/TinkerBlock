@@ -6,7 +6,7 @@ This example shows how to use the TK95 - EXTREME BRIGHT DUAL LEDS module on an A
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **GND** → Arduino Uno R3 GND
 - **NC** → Leave unconnected
@@ -50,7 +50,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK95-uno.gif)
+![Effect](images/TK95-uno.webp)
 
 
 ## Code Walkthrough

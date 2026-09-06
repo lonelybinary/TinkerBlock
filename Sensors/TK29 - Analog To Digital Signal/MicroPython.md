@@ -6,7 +6,7 @@ This example shows how to use the TK29 - ADC MODULE on a Raspberry Pi Pico 2 to 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -42,7 +42,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK29-pico.jpg)
+![Effect](images/TK29-pico.webp)
 
 
 ## Code Walkthrough

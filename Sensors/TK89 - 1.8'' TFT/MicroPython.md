@@ -6,7 +6,7 @@ This example shows how to use the TK89 - 1.8INCH TFT ST7735 module on a Raspberr
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -253,7 +253,7 @@ except Exception as e:
 
 ## Effect
 
-![Effect](images/TK89-pico.gif)
+![Effect](images/TK89-pico.webp)
 
 
 ## Code Walkthrough

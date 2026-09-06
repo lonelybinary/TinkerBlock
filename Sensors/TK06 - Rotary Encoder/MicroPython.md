@@ -6,7 +6,7 @@ This example shows how to use the TK06 - ROTARY ENCODER module on a Raspberry Pi
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 - **VCC** → Raspberry Pi Pico 2 3.3V or 5V
 - **GND** → Raspberry Pi Pico 2 GND
@@ -97,7 +97,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK06-pico.gif)
+![Effect](images/TK06-pico.webp)
 
 
 ## Code Walkthrough

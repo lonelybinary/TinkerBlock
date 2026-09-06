@@ -24,7 +24,7 @@ Same as Lesson 03:
 - **TK04 button:** VCC → 5V, GND → GND, SIGNAL → D2, NC leave unconnected  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![TK04 + LED wiring diagram](images/wiring_diagram-1.png)
+![TK04 + LED wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -128,7 +128,7 @@ Button: pressed
 3. **Open the serial monitor:** Click the **serial monitor icon in the red box at the top right of the Arduino IDE** (or menu Tools → **Serial Monitor**, shortcut Ctrl/Cmd + Shift + M) to open the serial window; the program output will appear there as in the figure.  
    - **Important:** Set baud at the bottom right of the window to **9600** (must match `Serial.begin(9600)` in the code)
 
-![After upload, click the icon in the red box to open the serial monitor; output as shown](images/monitor.png)
+![After upload, click the icon in the red box to open the serial monitor; output as shown](images/monitor.webp)
 4. **Watch the serial monitor:**
    - You should see “Program started” once (printed in `setup()`)
    - Then it keeps printing “Button: pressed” or “Button: released” (printed in `loop()`)

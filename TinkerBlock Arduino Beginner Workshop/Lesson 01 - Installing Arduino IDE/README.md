@@ -11,7 +11,7 @@ Complete download, installation, and basic setup of Arduino IDE on Windows for p
 - **Space**: about 500MB–1GB  
 - **Download**: https://www.arduino.cc/en/software → choose **Windows Win 10 or newer (64-bit)** (one-click install); MSI installer and ZIP portable are also available
 
-![Arduino download page](images/arduino_download.png)
+![Arduino download page](images/arduino_download.webp)
 
 ---
 
@@ -27,7 +27,7 @@ Complete download, installation, and basic setup of Arduino IDE on Windows for p
 
 **Download** (WCH site): [CH341SER.EXE](https://www.wch-ic.com/downloads/CH341SER_EXE.html) | [ZIP](https://www.wch-ic.com/downloads/CH341SER_ZIP.html) | [All drivers](https://www.wch-ic.com/downloads/category/30.html)
 
-![CH340 Windows driver download page](images/ch340_win.png)
+![CH340 Windows driver download page](images/ch340_win.webp)
 
 1. Connect the board; `Win + X` → Device Manager → **Ports (COM & LPT)**  
 2. If there is no **CH340** or **WCH** port (COMx) or there is a yellow warning: download and run the CH341SER installer  
@@ -39,11 +39,11 @@ Complete download, installation, and basic setup of Arduino IDE on Windows for p
 
 - **Board**: Tools → Board → Arduino AVR → **Arduino Uno** or **Arduino Nano** (for Nano, try Processor: ATmega328P or Old Bootloader)  
 
-![Tools → Board](images/arduino_board.png)
+![Tools → Board](images/arduino_board.webp)
 
 - **Port**: Tools → Port → select **COMx**; name may be **USB-SERIAL CH340** or **WCH** etc. (same driver)  
 
-![Tools → Port](images/arduino_port.png)
+![Tools → Port](images/arduino_port.webp)
 
 ---
 

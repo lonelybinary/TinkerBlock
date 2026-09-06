@@ -4,7 +4,7 @@ This module is an infrared transmitter module that can emit infrared light signa
 
 # Appearance
 
-| ![Front](images/TK63-F.png) | ![Back](images/TK63-B.png) | ![Side](images/TK63-S.png) |
+| ![Front](images/TK63-F.webp) | ![Back](images/TK63-B.webp) | ![Side](images/TK63-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

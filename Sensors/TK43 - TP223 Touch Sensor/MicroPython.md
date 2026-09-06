@@ -6,7 +6,7 @@ This example shows how to use the TK43 - TP223 TOUCH SENSOR module on a Raspberr
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 ## Code
 
@@ -47,7 +47,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK43-pico.gif)
+![Effect](images/TK43-pico.webp)
 
 
 ## Code Walkthrough

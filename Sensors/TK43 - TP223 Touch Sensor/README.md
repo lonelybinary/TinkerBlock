@@ -4,7 +4,7 @@ This module is a TP223 touch sensor module that can detect finger touch operatio
 
 # Appearance
 
-| ![Front](images/TK43-F.png) | ![Back](images/TK43-B.png) | ![Side](images/TK43-S.png) |
+| ![Front](images/TK43-F.webp) | ![Back](images/TK43-B.webp) | ![Side](images/TK43-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

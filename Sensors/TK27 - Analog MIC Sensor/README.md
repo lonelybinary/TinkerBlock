@@ -4,7 +4,7 @@ This module is an analog microphone sensor module that can detect sound intensit
 
 # Appearance
 
-| ![Front](images/TK27-F.png) | ![Back](images/TK27-B.png) | ![Side](images/TK27-S.png) |
+| ![Front](images/TK27-F.webp) | ![Back](images/TK27-B.webp) | ![Side](images/TK27-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

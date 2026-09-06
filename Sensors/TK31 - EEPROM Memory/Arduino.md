@@ -6,7 +6,7 @@ This example shows how to use the TK31 - EEPROM MODULE on an Arduino Uno R3 to r
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **VCC** → Arduino Uno R3 5V
 - **GND** → Arduino Uno R3 GND
@@ -74,7 +74,7 @@ byte readEEPROM(int address) {
 
 ## Effect
 
-![Effect](images/TK31-uno.gif)
+![Effect](images/TK31-uno.webp)
 
 
 ## Code Walkthrough

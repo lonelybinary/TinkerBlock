@@ -10,7 +10,7 @@ This module is a blue LED module. You can control the LED on/off via code. An LE
 
 # Appearance
 
-| ![Front](../../Sensors/TK01%20-%20XL%20LED/images/TK01-F.png) | ![Back](../../Sensors/TK01%20-%20XL%20LED/images/TK01-B.png) | ![Side](../../Sensors/TK01%20-%20XL%20LED/images/TK01-S.png) |
+| ![Front](images/TK01-F.webp) | ![Back](images/TK01-B.webp) | ![Side](images/TK01-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

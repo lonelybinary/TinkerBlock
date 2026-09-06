@@ -12,7 +12,7 @@ Connect TK01 XL LED to Arduino (SIGNAL to D13, so in code the number **13** mean
 - **SIGNAL** → Arduino D13  
 - **NC** — leave unconnected
 
-![TK01 wiring diagram](images/wiring_diagram-1.png)
+![TK01 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -89,7 +89,7 @@ void loop() {
 
 **Expected result:**
 
-![Blink effect](images/TK01-uno.gif)
+![Blink effect](images/TK01-uno.webp)
 
 Proceed to Lesson 03.
 

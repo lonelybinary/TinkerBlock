@@ -11,7 +11,7 @@ Complete download, installation, and basic setup of Arduino IDE on macOS for pro
 - **Space**: about 500MB–1GB  
 - **Download**: https://www.arduino.cc/en/software → **Apple Silicon** choose Apple Silicon, **Intel** choose Intel
 
-![Arduino download page (Mac: choose ARM64 or Intel 64-bit)](images/arduino_download.png)
+![Arduino download page (Mac: choose ARM64 or Intel 64-bit)](images/arduino_download.webp)
 
 ---
 
@@ -26,7 +26,7 @@ Complete download, installation, and basic setup of Arduino IDE on macOS for pro
 
 **Download** (WCH site): [CH341SER_MAC.ZIP](https://www.wch-ic.com/downloads/CH341SER_MAC_ZIP.html) | [All drivers](https://www.wch-ic.com/downloads/category/30.html)
 
-![CH340 Mac driver download page](images/ch340_mac.png)
+![CH340 Mac driver download page](images/ch340_mac.webp)
 
 1. Download and unzip; install according to the package instructions (.pkg)  
 2. **Allow extension** (Catalina+): if you see “system extension blocked” or the device is still not recognized → System Settings → Privacy & Security → General → find the blocked software → **Allow** → enter password → **restart Mac again**  
@@ -38,11 +38,11 @@ Complete download, installation, and basic setup of Arduino IDE on macOS for pro
 
 - **Board**: Tools → Board → Arduino AVR → **Arduino Uno** or **Arduino Nano** (for Nano, try Processor: ATmega328P or Old Bootloader)  
 
-![Tools → Board](images/arduino_board.png)
+![Tools → Board](images/arduino_board.webp)
 
 - **Port**: Tools → Port → select **/dev/cu.usbserial-xxxx** or **/dev/cu.usbmodemxxxx** (CH340/WCH often appear as **cu.wchusbserial** etc.)  
 
-![Tools → Port](images/arduino_port.png)
+![Tools → Port](images/arduino_port.webp)
 
 ---
 

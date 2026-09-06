@@ -6,7 +6,7 @@ This example shows how to use the TK08 - ROTARY POTENTIOMETER module on a Raspbe
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram_pico2-1.png)
+![Wiring diagram](images/wiring_diagram_pico2-1.webp)
 
 - **VCC** → Raspberry Pi Pico 2 3.3V or 5V
 - **GND** → Raspberry Pi Pico 2 GND
@@ -58,7 +58,7 @@ while True:
 
 ## Effect
 
-![Effect](images/TK08-pico.gif)
+![Effect](images/TK08-pico.webp)
 
 
 ## Code Walkthrough

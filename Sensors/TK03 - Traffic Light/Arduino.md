@@ -6,7 +6,7 @@ This example shows how to use the TK03 - TRAFFIC LIGHT module on an Arduino Uno 
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **GND** → Arduino Uno R3 GND
 - **RED** → Arduino Uno R3 D2
@@ -67,7 +67,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK03-uno.gif)
+![Effect](images/TK03-uno.webp)
 
 
 ## Code Walkthrough

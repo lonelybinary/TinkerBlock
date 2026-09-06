@@ -6,7 +6,7 @@ This example shows how to use the TK52 - 64X64 MATRIX LED module on an Arduino U
 
 ## Wiring
 
-![Wiring diagram](images/wiring_diagram-1.png)
+![Wiring diagram](images/wiring_diagram-1.webp)
 
 - **GND** → Arduino Uno R3 GND
 - **NC** → Leave unconnected
@@ -189,7 +189,7 @@ void loop() {
 
 ## Effect
 
-![Effect](images/TK52-uno.gif)
+![Effect](images/TK52-uno.webp)
 
 
 ## Code Walkthrough

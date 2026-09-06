@@ -25,7 +25,7 @@ Connect TK51 TM1637 4-digit display to Arduino:
 - **DIO** → Arduino D3  
 - **NC** leave unconnected
 
-![TK51 wiring diagram](images/wiring_diagram-1.png)
+![TK51 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -104,7 +104,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![4-digit display effect](images/TK51-uno.gif)
+![4-digit display effect](images/TK51-uno.webp)
 
 Proceed to Lesson 22.
 

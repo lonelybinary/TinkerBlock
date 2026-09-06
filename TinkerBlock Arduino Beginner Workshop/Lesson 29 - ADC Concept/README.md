@@ -25,7 +25,7 @@ To test with TK29:
 - **DIG** → Arduino D2  
 - **NC** leave unconnected
 
-![TK29 wiring diagram](images/wiring_diagram-1.png)
+![TK29 wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 

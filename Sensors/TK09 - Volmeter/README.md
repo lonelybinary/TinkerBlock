@@ -4,7 +4,7 @@ This module is a voltage detection module that can scale high voltage signals to
 
 # Appearance
 
-| ![Front](images/TK09-F.png) | ![Back](images/TK09-B.png) | ![Side](images/TK09-S.png) |
+| ![Front](images/TK09-F.webp) | ![Back](images/TK09-B.webp) | ![Side](images/TK09-S.webp) |
 | :-----------------------: | :-----------------------: | :-----------------------: |
 |          **Front**          |          **Back**          |          **Side**          |
 

@@ -11,7 +11,7 @@
 
 Wire the button and LED as in the diagram below.
 
-![TK04 + LED wiring diagram](images/wiring_diagram-1.png)
+![TK04 + LED wiring diagram](images/wiring_diagram-1.webp)
 
 ---
 
@@ -104,7 +104,7 @@ Once that’s clear, type the code in; press the button and the LED turns on, re
 
 **Expected result:**
 
-![Button controls LED effect](images/TK04-uno.gif)
+![Button controls LED effect](images/TK04-uno.webp)
 
 Proceed to Lesson 04 (or the first module lesson).
 
