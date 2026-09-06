@@ -26,7 +26,7 @@ Connect TK52 Matrix LED to Arduino:
 - **CS** → Arduino D2  
 - **NC** leave unconnected
 
-![TK52 wiring diagram](images/wiring_diagram-1.webp)
+![TK52 wiring diagram](../../Sensors/TK52%20-%20Matrix%20LED/images/wiring_diagram-1.webp)
 
 ---
 

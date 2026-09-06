@@ -24,7 +24,7 @@ Connect TK33 WS2812 RGB LED Bar to Arduino:
 - **DATA** → Arduino D6  
 - **NC** leave unconnected
 
-![TK33 wiring diagram](images/wiring_diagram-1.webp)
+![TK33 wiring diagram](../../Sensors/TK33%20-%20WS2812%20RGB%20LED%20Bar/images/wiring_diagram-1.webp)
 
 ---
 

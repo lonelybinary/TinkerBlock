@@ -13,7 +13,7 @@ Connect TK30 Vibration Motor to Arduino:
 - **SIGNAL** → Arduino D3 (PWM pin for speed control)  
 - **NC** leave unconnected
 
-![TK30 wiring diagram](images/wiring_diagram-1.webp)
+![TK30 wiring diagram](../../Sensors/TK30%20-%20Vibration%20Motor/images/wiring_diagram-1.webp)
 
 ---
 
@@ -93,7 +93,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![Vibration motor effect](images/TK30-uno.webp)
+![Vibration motor effect](../../Sensors/TK30%20-%20Vibration%20Motor/images/TK30-uno.webp)
 
 Proceed to Lesson 20.
 

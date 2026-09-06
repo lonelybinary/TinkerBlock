@@ -13,7 +13,7 @@ Connect TK65 Steam Sensor to Arduino:
 - **SIGNAL** → Arduino A0  
 - **NC** leave unconnected
 
-![TK65 wiring diagram](images/wiring_diagram-1.webp)
+![TK65 wiring diagram](../../Sensors/TK65%20-%20Steam%20Sensor/images/wiring_diagram-1.webp)
 
 ---
 
@@ -79,7 +79,7 @@ void loop() {
 
 **Expected result:**
 
-![Steam sensor serial output](images/TK65-uno.webp)
+![Steam sensor serial output](../../Sensors/TK65%20-%20Steam%20Sensor/images/TK65-uno.webp)
 
 Serial monitor:
 ```

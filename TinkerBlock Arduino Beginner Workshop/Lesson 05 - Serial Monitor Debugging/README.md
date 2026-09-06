@@ -24,7 +24,7 @@ Same as Lesson 03:
 - **TK04 button:** VCC → 5V, GND → GND, SIGNAL → D2, NC leave unconnected  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![TK04 + LED wiring diagram](images/wiring_diagram-1.webp)
+![TK04 + LED wiring diagram](../../Sensors/TK04%20-%20Push%20Button/images/wiring_diagram-1.webp)
 
 ---
 

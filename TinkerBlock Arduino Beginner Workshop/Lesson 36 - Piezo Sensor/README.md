@@ -13,7 +13,7 @@ Connect TK59 Piezo-Ceramic Sensor to Arduino:
 - **SIGNAL** → Arduino A0  
 - **NC** leave unconnected
 
-![TK59 wiring diagram](images/wiring_diagram-1.webp)
+![TK59 wiring diagram](../../Sensors/TK59%20-%20Piezo-Ceramic%20Sensor/images/wiring_diagram-1.webp)
 
 ---
 
@@ -89,7 +89,7 @@ Pressure: 589
 ```
 Tapping or pressing increases the value. As in the figure.
 
-![Piezo sensor effect](images/TK59-uno.webp)
+![Piezo sensor effect](../../Sensors/TK59%20-%20Piezo-Ceramic%20Sensor/images/TK59-uno.webp)
 
 **Note:** TK96 Mechanical Key LED is different (key + LED); you can try it.
 

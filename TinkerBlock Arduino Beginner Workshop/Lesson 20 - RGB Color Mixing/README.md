@@ -14,7 +14,7 @@ Connect TK02 RGB LED to Arduino (each color on a PWM pin):
 - **BLUE** → Arduino D6 (PWM)  
 - **NC** leave unconnected
 
-![TK02 wiring diagram](images/wiring_diagram-1.webp)
+![TK02 wiring diagram](../../Sensors/TK02%20-%20RGB%20LED/images/wiring_diagram-1.webp)
 
 ---
 
@@ -131,7 +131,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![RGB color mixing effect](images/TK02-uno.webp)
+![RGB color mixing effect](../../Sensors/TK02%20-%20RGB%20LED/images/TK02-uno.webp)
 
 Proceed to Lesson 21.
 

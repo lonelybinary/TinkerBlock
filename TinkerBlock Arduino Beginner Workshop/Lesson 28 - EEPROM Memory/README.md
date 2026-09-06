@@ -27,7 +27,7 @@ Connect TK31 EEPROM to Arduino (I2C):
 - **SCL** → Arduino A5 (I2C clock)  
 - **NC** leave unconnected
 
-![TK31 wiring diagram](images/wiring_diagram-1.webp)
+![TK31 wiring diagram](../../Sensors/TK31%20-%20EEPROM%20Memory/images/wiring_diagram-1.webp)
 
 **Note:** On Arduino Uno, I2C is fixed: SDA=A4, SCL=A5.
 
@@ -135,7 +135,7 @@ byte readEEPROM(int address) {
 
 **Expected result:** As in the figure.
 
-![EEPROM effect](images/TK31-uno.webp)
+![EEPROM effect](../../Sensors/TK31%20-%20EEPROM%20Memory/images/TK31-uno.webp)
 
 Proceed to Lesson 29.
 

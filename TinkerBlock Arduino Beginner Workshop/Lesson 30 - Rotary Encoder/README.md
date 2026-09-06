@@ -9,7 +9,7 @@
 - **TK06 Rotary Encoder:** VCC → 5V, GND → GND, CLK → D4, DATA → D5, BTN → D3  
 - **TK01 LED:** GND → GND, SIGNAL → D6 (PWM pin)
 
-![TK06 + LED wiring diagram](images/wiring_diagram-1.webp)
+![TK06 + LED wiring diagram](../../Sensors/TK06%20-%20Rotary%20Encoder/images/wiring_diagram-1.webp)
 
 ---
 
@@ -135,7 +135,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![Rotary encoder effect](images/TK06-uno.webp)
+![Rotary encoder effect](../../Sensors/TK06%20-%20Rotary%20Encoder/images/TK06-uno.webp)
 
 Proceed to Lesson 31.
 

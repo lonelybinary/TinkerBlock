@@ -18,7 +18,7 @@
 - **SIGNAL** → Arduino D9 (PWM pin; use 9 in code)  
 - **NC** leave unconnected
 
-![TK08 wiring diagram](images/wiring_diagram-1.webp)
+![TK08 wiring diagram](../../Sensors/TK08%20-%20Rotary%20Potentiometer/images/wiring_diagram-1.webp)
 
 (Optional) If your kit has **TK07 Disc Potentiometer**, wire the same way: GND→GND, VCC→5V, SIGNAL→A1, NC unconnected.
 
@@ -104,7 +104,7 @@ void loop() {
 
 **Expected result:** As in the figure. Serial values change when you turn the potentiometer; LED on D9 brightness changes accordingly.
 
-![Potentiometer controls LED brightness](images/TK08-uno.webp)
+![Potentiometer controls LED brightness](../../Sensors/TK08%20-%20Rotary%20Potentiometer/images/TK08-uno.webp)
 
 Proceed to Lesson 12.
 

@@ -9,7 +9,7 @@
 - **TK94 Five-Direction Joystick:** VCC → 5V, GND → GND, SIGNAL → A0  
 - **TK01 LED:** GND → GND, SIGNAL → D13
 
-![TK94 + LED wiring diagram](images/wiring_diagram-1.webp)
+![TK94 + LED wiring diagram](../../Sensors/TK94%20-%20Five-Direction%20Joystick/images/wiring_diagram-1.webp)
 
 ---
 
@@ -100,7 +100,7 @@ void loop() {
 
 **Expected result:**
 
-![Joystick serial and LED](images/TK94-uno.webp)
+![Joystick serial and LED](../../Sensors/TK94%20-%20Five-Direction%20Joystick/images/TK94-uno.webp)
 
 Serial monitor:
 ```

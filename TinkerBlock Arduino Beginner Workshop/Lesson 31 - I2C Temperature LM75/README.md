@@ -24,7 +24,7 @@ Connect TK42 LM75 to Arduino (I2C):
 - **SCL** → Arduino A5 (I2C clock)  
 - **NC** leave unconnected
 
-![TK42 wiring diagram](images/wiring_diagram-1.webp)
+![TK42 wiring diagram](../../Sensors/TK42%20-%20LM75/images/wiring_diagram-1.webp)
 
 ---
 
@@ -106,7 +106,7 @@ void loop() {
 
 **Expected result:**
 
-![LM75 temperature on serial](images/TK42-uno.webp)
+![LM75 temperature on serial](../../Sensors/TK42%20-%20LM75/images/TK42-uno.webp)
 
 Serial monitor:
 ```

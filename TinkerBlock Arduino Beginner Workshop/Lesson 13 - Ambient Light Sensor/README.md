@@ -13,7 +13,7 @@ Connect TK20 Ambient Light to Arduino:
 - **SIGNAL** → Arduino A0  
 - **NC** leave unconnected
 
-![TK20 wiring diagram](images/wiring_diagram-1.webp)
+![TK20 wiring diagram](../../Sensors/TK20%20-%20Ambient%20Light/images/wiring_diagram-1.webp)
 
 ---
 

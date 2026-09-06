@@ -26,7 +26,7 @@ This lesson uses **two UNO R3** boards: one with the **receiver** only, one with
 - **SIGNAL** → Arduino D3  
 - **NC** leave unconnected
 
-![TK15 IR receiver wiring](images/wiring_diagram-1.webp)
+![TK15 IR receiver wiring](../../Sensors/TK15%20-%20IR%20Receiver/images/wiring_diagram-1.webp)
 
 ### Board B: IR sender (TK16)
 
@@ -35,7 +35,7 @@ This lesson uses **two UNO R3** boards: one with the **receiver** only, one with
 - **SIGNAL** → Arduino D3  
 - **NC** leave unconnected
 
-![TK16 IR sender wiring](images/wiring_diagram-2.webp)
+![TK16 IR sender wiring](../../Sensors/TK16%20-%20IR%20Sender/images/wiring_diagram-1.webp)
 
 ---
 

@@ -13,7 +13,7 @@ Connect TK36 Active Buzzer to Arduino:
 - **SIGNAL** → Arduino D3  
 - **NC** leave unconnected
 
-![TK36 wiring diagram](images/wiring_diagram-1.webp)
+![TK36 wiring diagram](../../Sensors/TK36%20-%20Active%20Buzzer/images/wiring_diagram-1.webp)
 
 ---
 
@@ -91,7 +91,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![Active buzzer effect](images/TK36-uno.webp)
+![Active buzzer effect](../../Sensors/TK36%20-%20Active%20Buzzer/images/TK36-uno.webp)
 
 Proceed to Lesson 19.
 

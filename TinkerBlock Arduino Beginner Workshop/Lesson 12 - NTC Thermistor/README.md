@@ -13,7 +13,7 @@ Connect TK12 NTC Thermistor to Arduino:
 - **SIGNAL** → Arduino A0  
 - **NC** leave unconnected
 
-![TK12 wiring diagram](images/wiring_diagram-1.webp)
+![TK12 wiring diagram](../../Sensors/TK12%20-%20NTC%20Thermistor/images/wiring_diagram-1.webp)
 
 ---
 

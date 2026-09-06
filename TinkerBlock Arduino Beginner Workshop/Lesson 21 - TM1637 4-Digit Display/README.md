@@ -25,7 +25,7 @@ Connect TK51 TM1637 4-digit display to Arduino:
 - **DIO** → Arduino D3  
 - **NC** leave unconnected
 
-![TK51 wiring diagram](images/wiring_diagram-1.webp)
+![TK51 wiring diagram](../../Sensors/TK51%20-%20TM1637%204-Digit%20Display/images/wiring_diagram-1.webp)
 
 ---
 

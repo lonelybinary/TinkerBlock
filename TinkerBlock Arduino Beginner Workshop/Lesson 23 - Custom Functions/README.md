@@ -12,7 +12,7 @@ Reuse a previous module, e.g. TK01 XL LED:
 - **SIGNAL** → Arduino D13  
 - **NC** leave unconnected
 
-![TK01 wiring diagram](images/wiring_diagram-1.webp)
+![TK01 wiring diagram](../../Sensors/TK01%20-%20XL%20LED/images/wiring_diagram-1.webp)
 
 ---
 
@@ -87,7 +87,7 @@ void loop() {
 
 **Expected result:** As in the figure.
 
-![Custom function blink effect](images/TK01-uno.webp)
+![Custom function blink effect](../../Sensors/TK01%20-%20XL%20LED/images/TK01-uno.webp)
 
 Proceed to Lesson 24.
 
